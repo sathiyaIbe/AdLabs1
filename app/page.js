@@ -4,18 +4,18 @@ import { Services, BluePrint, Team, Faq, Hero, Contact, Footer, World } from '..
 import Lenis from '@studio-freight/lenis';
 import {gsap,ScrollTrigger} from 'gsap/all';
 const Page = () => {
-  // const lenis = new Lenis({
-  //   smooth: true,
-  // })
+  const lenis = new Lenis({
+    smooth: true,
+  })
 
 
   
-  // function raf(time) {
-  //   lenis.raf(time)
-  //   requestAnimationFrame(raf)
-  // }
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
   
-  // requestAnimationFrame(raf)
+  requestAnimationFrame(raf)
 return(
   <div>
     {/* <Navbar /> */}

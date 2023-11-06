@@ -41,15 +41,12 @@ const ctx=gsap.context(()=>{
 
 
  t.from(charss.chars,{
-  opacity:1,
-  scaleY:0,
-  y:5,
-  transformOrigin:'bottom',
-  
-  
-    stagger:'0.1',
-    duration:0.2,
-    
+    opacity:0,
+      scaleY:0,
+      y:-10,
+      transformOrigin:'top',
+      stagger:0.1,
+      duration:0.2,
     })
   }, triggerRef1)
     return () => ctx.revert();  //cleaedUp

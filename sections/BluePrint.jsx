@@ -2,6 +2,7 @@
 'use client';
 import {gsap,ScrollTrigger} from "gsap/all";
 import { useEffect, useRef, useState } from "react";
+import SplitType from "split-type";
 
 const BluePrint = () => {
   const textRef = useRef(null);
@@ -26,6 +27,20 @@ const ctx3=gsap.context(()=>{
 
     //   }
     // );
+
+    const charss=SplitType.create('.blueprint', {type:'chars'})
+    gsap.from(charss.chars,{
+      scrollTrigger:{
+        trigger:triggerRef.current,
+        start:'top 80%',
+        end:'top 20%',
+        scrub:true,
+      },
+      scaleY:0,
+      y:-20,
+      transformOrigin:'top',
+      stagger:0.1,
+    })
     
     gsap.timeline({
       scrollTrigger:{
@@ -183,7 +198,7 @@ const ctx3=gsap.context(()=>{
   <section id="main" ref={triggerRef} className="min-h-[300vh] flex flex-col">
     <div className="self-center flex flex-col gap-6 sticky top-0 min-h-[100vh] w-[90%]">
     <div className="self-center pt-11 pb-6 flex flex-col gap-6 w-[80%]">
-      <h1 className="service_header ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
+      <h1 className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
       <p className="hero_text">We have the proven track record to get the job done.</p>
     </div>
     <div className="flex md:flex-row  flex-col max-w-[90%] gap-11  self-center">

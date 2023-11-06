@@ -3,12 +3,28 @@
 import { InlineWidget, PopupWidget, useCalendlyEventListener } from "react-calendly";
 import {gsap,ScrollTrigger} from "gsap/all";
 import { useEffect, useRef, useState } from "react";
+import SplitType from "split-type";
 const Contact = () => {
   const sectionRefContact = useRef(null);
 
 useEffect(()=>{
   const ctxTeam=gsap.context(()=>{
     const arr1=["#first","#second","#third"]
+
+    const charss=SplitType.create('.contact', {type:'chars'})
+    gsap.from(charss.chars,{
+      scrollTrigger:{
+        trigger:sectionRefContact.current,
+        start:'top 80%',
+          end:'top 20%',
+        scrub:true,
+      },
+      opacity:0,
+      scaleY:0,
+      y:-20,
+      transformOrigin:'top',
+      stagger:0.1,
+    })
 
     const t=gsap.timeline({
       scrollTrigger:{
@@ -68,7 +84,7 @@ useEffect(()=>{
   <section ref={sectionRefContact} className="min-h-screen pb-24">
     <div className="flex flex-col justify-around w-[80$%]">
      <div className="self-center md:w-[60%] mt-6 mb-6 flex flex-col gap-6">
-      <h1 className="service_header">Book your free <span className="text-[#0618DD]"> 10-minute </span> consultation call</h1>
+      <h1 className="service_header contact">Book your free <span className="text-[#0618DD]"> 10-minute </span> consultation call</h1>
     </div>
     <div className="flex flex-col mt-11">
     <div className="w-[80%] self-center  flex md:flex-row justify-between flex-col gap-11 md:gap-0">

@@ -2,6 +2,7 @@
 'use client';
 import {gsap, MotionPathPlugin,ScrollTrigger} from "gsap/all";
 import { useEffect, useLayoutEffect, useRef } from "react";
+import SplitType from "split-type";
 const Services = () => {
   const triggerRef2 = useRef(null);
 
@@ -22,27 +23,48 @@ const Services = () => {
 
     //   }
     // )
+const mm=gsap.matchMedia()
+const charss=SplitType.create('.services', {type:'chars'})
+mm.add("(min-width:768px)",()=>{
+  gsap.from(charss.chars,{
+    scrollTrigger:{
+      trigger:triggerRef2.current,
+      start:'top 80%',
+      end:'top 20%',
+      scrub:true,
+    },
+    opacity:0,
+    scaleY:0,
+    y:-20,
+    transformOrigin:'top',
+    stagger:0.1,
+  })
+})
 
-    // gsap.set("#blue12",{
-    //   xPercent:-50,
-    //   yPercent:-50,
-    //   transformOrigin:"50% 50%"
-    // })
-    // gsap.set("#blue13",{
-    //   xPercent:-50,
-    //   yPercent:-50,
-    //   transformOrigin:"50% 50%"
-    // })
-    // gsap.set("#blue14",{
-    //   xPercent:-50,
-    //   yPercent:-50,
-    //   transformOrigin:"50% 50%"
-    // })
+mm.add("(max-width:768px)",()=>{
+  gsap.from(charss.chars,{
+    scrollTrigger:{
+      trigger:triggerRef2.current,
+      start:'bottom 100%',
+      end:'bottom 50%',
+      toggleActions:'play restart none reset',
+      scrub:false
+    },
+    opacity:0,
+    scaleY:0,
+    y:-20,
+    transformOrigin:'top',
+    stagger:0.1,
+  })
+})  
+
+
+
 gsap.timeline({
   scrollTrigger:{
     trigger:'#svg',
     start:'top 100%',
-    end:'bottom -300%',
+   
     // markers:true,
     // scrub:true,
   }
@@ -84,6 +106,7 @@ gsap.timeline({
        },
       
     },0)
+
   },triggerRef2)
    
       return () => ctx1.revert();
@@ -93,7 +116,7 @@ gsap.timeline({
   return(
   <section ref={triggerRef2} className="md:min-h-[100vh] flex flex-col pb-11">
     <div className="self-center flex flex-col gap-6 mt-11 mb-6">
-      <h1 className="service_header" style={{color:'#0618DD'}}>Our Services</h1>
+      <h1 className="service_header services" style={{color:'#0618DD'}}>Our Services</h1>
       <p className="service_text md:w-[60%] w-[90%] self-center">The key to successful advertising 
       is not simply spending more money, but spending on the right platform, audience and ads.</p>
     </div>
