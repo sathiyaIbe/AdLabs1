@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-family: 'Manrope-Bold'
+}
+
+
+
+.section_container{
+  @apply md:min-h-[100vh] max-w-[100vw] flex flex-col ;
+}
+.ball_img{
+  visibility: hidden;
+}
+
+.hero_header{
+  @apply font-[Manrope-Bold] text-[32px] md:text-[64px]  lg:text-[72px] leading-[40px] md:leading-[72px] lg:leading-[90px] text-[#000] text-center;
+}
+
+
+
+.hero_text{
+  @apply font-[Spartan] text-[18px] md:text-[20px]  lg:text-[20px] leading-[30px] md:leading-[36px] lg:leading-[39px] text-[#282828] text-center;
+
+}
+
+/* Service */
+
+.service_header{
+  @apply font-[Manrope-Bold] text-[32px] md:text-[48px]  lg:text-[52px] leading-[40px] md:leading-[52px]  lg:leading-[58px] text-[#000] text-center capitalize;
+
+}
+
+.service_text{
+  @apply font-[Spartan] text-[18px] leading-[39px] text-[#282828] text-center;
+
+}
+
+.blue_header{
+  @apply font-[Spartan-Bold] text-[22px] md:text-[28px]  lg:text-[32px] leading-[28px] md:leading-[32px] lg:leading-[36px] text-[#0618DD]  uppercase text-center  md:text-left;
+}
+
+.hr_line_question{
+  @apply border-[2px] border-b-[#0618DD] 
+}
+.blue_description{
+  @apply font-[Spartan] text-[18px] leading-[39px] text-[#000]  md:text-left text-center;
+
+}
+
+.question_text{
+  @apply font-[Manrope-Medium] text-[18px] md:text-[24px] leading-[28px]  text-[#0618DD]  ;
+
+}
+.team_text{
+  @apply font-[Manrope-Medium] text-[32px] leading-[36px]  text-[#0618DD] uppercase   ;
+
+}
+.answer_text{
+  @apply font-[Spartan] text-[18px] leading-[28px]  text-[#000];
+}
+.contact_header{
+  @apply font-[Manrope-Regular] text-[32px] leading-[36px]   text-[#0618DD]   ;
+
+}
+
+.contact_text{
+  @apply font-[Spartan] text-[18px] leading-[28px]  text-[#000];
+
+}
+
+.footer_header{
+  @apply text-[97px] md:text-[280px] lg:text-[300px]  font-[Manrope-Extra] text-[#0618DD];
+
+}
+
+.footer_button{
+  @apply text-[16px] md:text-[18px] lg:text-[20px] leading-[18px] md:leading-[20px]  hidden md:block lg:leading-[23px]  font-[Manrope-Medium] text-[#0618DD] ;
+
+}
+
+.footer_text{
+  @apply text-[14px] md:text-[16px] lg:text-[16px] leading-[18px] md:leading-[20px]   font-[Manrope-Medium] text-[#0618DD] ;
+
+}
+
+
+.calendly{
+  border: 2px solid #0618DD !important;
+  @apply rounded-3xl;
+  max-height: fit-content !important;
+  max-width: 550px !important;
+  padding: 20px !important;
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url("/Fonts/Manrope-Bold.ttf");
+}
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url("/Fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url("/Fonts/Manrope-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Extra';
+  src: url("/Fonts/Manrope-ExtraBold.ttf");
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url("/Fonts/LeagueSpartan-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Spartan-Bold';
+  src: url("/Fonts/LeagueSpartan-Bold.ttf");
+}
