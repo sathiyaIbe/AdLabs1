@@ -46,9 +46,9 @@ mm.add("(max-width:768px)",()=>{
     scrollTrigger:{
       trigger:triggerRef2.current,
       start:'bottom 100%',
-      end:'bottom 50%',
+      end:'bottom 80%',
       toggleActions:'play restart none reset',
-      scrub:false
+      scrub:true
     },
     opacity:0,
     scaleY:0,

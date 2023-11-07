@@ -23,35 +23,73 @@ useEffect(()=>{
       transformOrigin:'top',
       stagger:0.1,
     })
-    const t=gsap.timeline({
-      scrollTrigger:{
-        trigger:sectionRefTeam.current,
-        start:'top center',
-        end:'bottom center',
-        toggleActions:'play none none reset'
-      }
+    const mm=gsap.matchMedia()
+    mm.add("(min-width:768px)",()=>{
+      const t=gsap.timeline({
+        scrollTrigger:{
+          trigger:sectionRefTeam.current,
+          start:'top center',
+          end:'bottom center',
+          scrub:false,
+          toggleActions:'play none none reset'
+        }
+      })
+  
+      const arr=gsap.utils.toArray('.first_team')
+      arr.map((element,i) => {
+        t.to(element,{
+          opacity:1,
+          scaleY:1,
+          duration:1,
+         transform:'bottom',
+        })
+        .fromTo(arr1[i],{
+          opacity:0,
+          
+          rotationY:90,
+        },{
+          opacity:1,
+          rotationY:0,
+          duration:0.5,
+        },)
+  
+      });
+      
     })
 
-    const arr=gsap.utils.toArray('.first_team')
-    arr.map((element,i) => {
-      t.to(element,{
-        opacity:1,
-        scaleY:1,
-        duration:1,
-       transform:'bottom',
+    mm.add("(max-width:768px)",()=>{
+      const t=gsap.timeline({
+        scrollTrigger:{
+          trigger:sectionRefTeam.current,
+          start:'top center',
+          end:'bottom 70%',
+          scrub:true,
+          toggleActions:'play none none reset'
+        }
       })
-      .fromTo(arr1[i],{
-        opacity:0,
-        
-        rotationY:90,
-      },{
-        opacity:1,
-        rotationY:0,
-        duration:0.5,
-      },)
+  
+      const arr=gsap.utils.toArray('.first_team')
+      arr.map((element,i) => {
+        t.to(element,{
+          opacity:1,
+          scaleY:1,
+          duration:1,
+         transform:'bottom',
+        })
+        .fromTo(arr1[i],{
+          opacity:0,
+          
+          rotationY:90,
+        },{
+          opacity:1,
+          rotationY:0,
+          duration:0.5,
+        },)
+  
+      });
+      
+    })
 
-    });
-    
   })
   return () => ctxTeam.revert()
 });

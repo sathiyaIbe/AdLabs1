@@ -25,38 +25,56 @@ useEffect(()=>{
       transformOrigin:'top',
       stagger:0.1,
     })
+const mm=gsap.matchMedia()
+mm.add("(min-width:768px)",()=>{
+  const t=gsap.timeline({
+    scrollTrigger:{
+      trigger:sectionRefContact.current,
+      start:'top center',
+      end:'bottom center',
+      toggleActions:'play none none reset',
+      scrub:false,
+    }
+  })
 
-    const t=gsap.timeline({
-      scrollTrigger:{
-        trigger:sectionRefContact.current,
-        start:'top center',
-        end:'bottom center',
-        toggleActions:'play none none reset'
-      }
+  const arr=gsap.utils.toArray('.contact1')
+  arr.map((element,i) => {
+    t.fromTo(element,{
+      opacity:0,
+      x:50,
+     
+    },{
+      opacity:1,
+      x:0,
+      duration:1
     })
+  });
+})
 
-    const arr=gsap.utils.toArray('.contact1')
-    arr.map((element,i) => {
-      t.fromTo(element,{
-        opacity:0,
-        x:50,
-       
-      },{
-        opacity:1,
-        x:0,
-        duration:1
-      })
-      // .fromTo(arr1[i],{
-      //   opacity:0,
-        
-      //   rotationY:90,
-      // },{
-      //   opacity:1,
-      //   rotationY:0,
-      //   duration:1,
-      // },)
+mm.add("(max-width:768px)",()=>{
+  const t=gsap.timeline({
+    scrollTrigger:{
+      trigger:sectionRefContact.current,
+      start:'top 40%',
+      end:'bottom 60%',
+      toggleActions:'play none none reset',
+      scrub:true,
+    }
+  })
 
-    });
+  const arr=gsap.utils.toArray('.contact1')
+  arr.map((element,i) => {
+    t.fromTo(element,{
+      opacity:0,
+      x:50,
+     
+    },{
+      opacity:1,
+      x:0,
+      duration:1
+    })
+  });
+})
     
   })
   return () => ctxTeam.revert()
