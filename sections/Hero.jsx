@@ -41,7 +41,6 @@ const ctx=gsap.context(()=>{
 
 
  t.fromTo(charss.chars,{
-     fontFamily:'Manrope-Bold',
       scaleY:0,
       y:-20,
       transformOrigin:'top'},{

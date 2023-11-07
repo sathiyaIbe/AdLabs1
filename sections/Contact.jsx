@@ -12,13 +12,16 @@ useEffect(()=>{
     const arr1=["#first","#second","#third"]
 
     const charss=SplitType.create('.contact', {type:'chars'})
-    gsap.from(charss.chars,{
+
+    const t1=gsap.timeline({
       scrollTrigger:{
         trigger:sectionRefContact.current,
         start:'top 80%',
           end:'top 20%',
         scrub:true,
       },
+    })
+    t1.from(charss.chars,{
       opacity:0,
       scaleY:0,
       y:-20,

@@ -25,24 +25,37 @@ const Services = () => {
     // )
 const mm=gsap.matchMedia()
 const charss=SplitType.create('.services', {type:'chars'})
+const heroText=SplitType.create('.service_desc',{types:'chars'})
+
 mm.add("(min-width:768px)",()=>{
-  gsap.from(charss.chars,{
+
+  const t1=gsap.timeline({
     scrollTrigger:{
       trigger:triggerRef2.current,
       start:'top 80%',
       end:'top 20%',
       scrub:true,
-    },
+    }
+  })
+
+  t1.from(charss.chars,{
+    
     opacity:0,
+    scaleY:0,
+    y:-20,
+    transformOrigin:'top',
+    stagger:0.1,
+  }).from(heroText.chars,{
+    opacity:0,
+    fontFamily:'Spartan',
     scaleY:0,
     y:-20,
     transformOrigin:'top',
     stagger:0.1,
   })
 })
-
 mm.add("(max-width:768px)",()=>{
-  gsap.from(charss.chars,{
+  const t1=gsap.timeline({
     scrollTrigger:{
       trigger:triggerRef2.current,
       start:'bottom 100%',
@@ -50,6 +63,16 @@ mm.add("(max-width:768px)",()=>{
       toggleActions:'play restart none reset',
       scrub:true
     },
+  })
+  t1.from(charss.chars,{
+   
+    opacity:0,
+    scaleY:0,
+    y:-20,
+    transformOrigin:'top',
+    stagger:0.1,
+  }).from(heroText.chars,{
+   
     opacity:0,
     scaleY:0,
     y:-20,
@@ -117,7 +140,7 @@ gsap.timeline({
   <section ref={triggerRef2} className="md:min-h-[100vh] flex flex-col pb-11">
     <div className="self-center flex flex-col gap-6 mt-11 mb-6">
       <h1 className="service_header services" style={{color:'#0618DD'}}>Our Services</h1>
-      <p className="service_text md:w-[60%] w-[90%] self-center">The key to successful advertising 
+      <p className="service_text service_desc md:w-[60%] w-[90%] self-center">The key to successful advertising 
       is not simply spending more money, but spending on the right platform, audience and ads.</p>
     </div>
    

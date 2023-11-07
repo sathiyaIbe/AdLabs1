@@ -10,13 +10,28 @@ useEffect(()=>{
   const ctxTeam=gsap.context(()=>{
     const arr1=["#first","#second","#third"]
     const charss=SplitType.create('.team', {type:'chars'})
-    gsap.from(charss.chars,{
+    const heroText=SplitType.create('.team_desc',{types:'chars'})
+
+
+    const t1=gsap.timeline({
       scrollTrigger:{
         trigger:sectionRefTeam.current,
         start:'top 80%',
           end:'top 20%',
         scrub:true,
       },
+    })
+
+
+    t1.from(charss.chars,{
+      
+      opacity:0,
+      scaleY:0,
+      y:-20,
+      transformOrigin:'top',
+      stagger:0.1,
+    }).from(heroText.chars,{
+      fontFamily:'Spartan',
       opacity:0,
       scaleY:0,
       y:-20,
@@ -98,7 +113,7 @@ useEffect(()=>{
     <div className=" flex flex-col self-center w-[80%] items-center">
         <div className="self-center md:w-[60%]  mt-6 mb-6 flex flex-col gap-6">
       <h1 className="service_header team" style={{color:'#0618DD'}}>The Team</h1>
-      <p className="hero_text  ">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</p>
+      <p className="hero_text  team_desc">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</p>
     </div>
     <div className="w-[90%] self-center flex md:flex-row items-center  md:justify-center flex-col mt-11">
       <div className="flex flex-col justify-center  " >
