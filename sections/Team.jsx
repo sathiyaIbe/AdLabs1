@@ -40,7 +40,7 @@ useEffect(()=>{
         t.to(element,{
           opacity:1,
           scaleY:1,
-          duration:1,
+          duration:0.3,
          transform:'bottom',
         })
         .fromTo(arr1[i],{
@@ -50,7 +50,7 @@ useEffect(()=>{
         },{
           opacity:1,
           rotationY:0,
-          duration:0.5,
+          duration:0.3,
         },)
   
       });

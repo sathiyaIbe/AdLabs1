@@ -34,7 +34,7 @@
 /* Service */
 
 .service_header{
-  @apply font-[Manrope-Bold] text-[32px] md:text-[48px]  lg:text-[52px] leading-[40px] md:leading-[52px]  lg:leading-[58px] text-[#000] text-center capitalize;
+  @apply font-[Manrope-Bold] text-[32px] md:text-[48px]  lg:text-[52px] leading-[40px] md:leading-[52px]  lg:leading-[58px] text-[#000] text-center ;
 
 }
 

@@ -60,7 +60,7 @@ const ctx=gsap.context(()=>{
     </div>
     <div ref={sectionRef} className="md:w-[75%] w-[90%] self-center flex flex-col gap-3">
       <h1 className="hero_header opacity-1">Supercharge your growth with performance-based Ads that deliver <span className="text-[#0618DD]">real results. </span> </h1>
-      <p className="hero_text w-[90%] self-center hidden md:block">Ad Labs is a Paid Advertising Agency that will bring your brand forward with a Return on 
+      <p className="hero_text md:w-[70%] self-center hidden md:block">Ad Labs is a Paid Advertising Agency that will bring your brand forward with a Return on 
       Ad Spend. We leverage data to develop high-performing ad creatives and expertly manage campaigns to achieve maximum ROI.</p>
     </div>
   </section>
