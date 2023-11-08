@@ -16,7 +16,7 @@ useEffect(()=>{
     const t1=gsap.timeline({
       scrollTrigger:{
         trigger:sectionRefContact.current,
-        start:'top center',
+        start:'top 90%',
           end:'top 20%',
         scrub:true,
       },

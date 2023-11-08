@@ -4,13 +4,14 @@
 const Footer = () => (
   <div className="flex flex-col pb-11  ">
   <div className=" flex flex-col gap-6 w-[90%]  self-center">
-<div className="flex self-center justify-center md:w-fit ">
+<div className="flex self-center ">
+  <div className="flex w-fit   md:justify-center ">
  <h1 className="footer_header relative text-center md:left-[4%] left-[2%] w-fit">AD</h1>
  <img src='./footer_flask.png' className="object-none relative hidden md:block z-40 right-[0%] mt-6" alt=''/>
  <img src='./footer_flask_mob.png' className="object-none relative md:hidden z-40 right-[4%] mt-6" alt=''/>
 
  <h1 className="footer_header  relative right-[8%] md:right-[4%] w-fit">LABS</h1>
-
+ </div>
 </div>
 
 <div className="self-center  flex gap-6">

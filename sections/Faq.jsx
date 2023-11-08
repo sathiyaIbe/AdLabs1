@@ -17,7 +17,7 @@ const Faq = () => {
   gsap.from(charss.words,{
     scrollTrigger:{
       trigger:triggerRefFaq.current,
-      start:'top center',
+      start:'top 80%',
         end:'top 20%',
       scrub:true,
     },

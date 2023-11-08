@@ -228,13 +228,13 @@ gsap.timeline({
   }, []);
   return(
   <section id="main" ref={triggerRef} className="min-h-[300vh] flex flex-col">
-    <div className="self-center flex flex-col justify-center gap-6 sticky top-0 min-h-[100vh] ">
+    <div className="self-center flex flex-col md:justify-center gap-6 sticky top-0 min-h-[100vh] ">
     <div className="self-center pt-11 pb-6 flex flex-col gap-6 w-[80%]">
       <h1 className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
       <p className="hero_text blueprint_desc">We have the proven track record to get the job done.</p>
     </div>
     <div className="flex md:flex-row    flex-col gap-6   self-center">
-      <div  ref={textContainerRef} className="md:basis-[40%] text_svg_container flex flex-col text-left  self-center md:order-1 order-2">
+      <div  ref={textContainerRef} className="md:min-w-[40%] text_svg_container flex flex-col text-left  self-center md:order-1 order-2">
         <div className="flex md:justify-end  justify-center">
           <div className="flex flex-col md:w-[60%] w-[80%]">
 <h1 ref={textRef} className="blue_header  ">
@@ -246,7 +246,7 @@ AUDIT
 </div>
 </div>
       </div>
-      <div className="md:basis-[50%]   svg_container_blue flex flex-col md:order-2 order-1 ">
+      <div className="md:min-w-[50%]   svg_container_blue flex flex-col md:order-2 order-1 ">
       
       <svg width="630" height="322" className="hidden md:block " viewBox="0 0 723 422" fill="none" xmlns="http://www.w3.org/2000/svg">
 
