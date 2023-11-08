@@ -109,7 +109,7 @@ useEffect(()=>{
     <div className=" flex flex-col self-center w-[80%] items-center">
         <div className="self-center md:w-[60%]  mt-6 mb-6 flex flex-col gap-6">
       <h1 className="service_header team" style={{color:'#0618DD'}}>The Team</h1>
-      <p className="hero_text  team_desc w-[90%] self-center">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</p>
+      <p className="hero_text  team_desc md:w-[90%] self-center">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</p>
     </div>
     <div className="w-[90%] self-center flex md:flex-row items-center  md:justify-center flex-col mt-11">
       <div className="flex flex-col justify-center  " >
