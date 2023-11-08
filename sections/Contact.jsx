@@ -36,7 +36,7 @@ mm.add("(min-width:768px)",()=>{
     scrollTrigger:{
       trigger:sectionRefContact.current,
       start:'top 100%',
-      end:'bottom center',
+      end:'bottom 100%',
       scrub:true,
     }
   })
@@ -50,7 +50,7 @@ mm.add("(min-width:768px)",()=>{
     },{
       opacity:1,
       x:0,
-      duration:1
+      duration:0.5
     })
   });
 })
@@ -107,8 +107,8 @@ mm.add("(max-width:768px)",()=>{
      <div className="self-center md:w-[60%] mt-6 mb-6 flex flex-col gap-6">
       <h1 className="service_header contact">Book your free <span className="text-[#0618DD]"> 10-minute </span> consultation call</h1>
     </div>
-    <div className="flex flex-col mt-11">
-    <div className="w-[80%] self-center  flex md:flex-row justify-between flex-col gap-11 md:gap-0">
+    <div className="flex flex-col  justify-center mt-11">
+    <div className=" self-center w-[90%]  flex md:flex-row justify-center  flex-col  md:gap-0">
       <div className="basis-1/3 flex flex-col gap-6 order-2 md:order-1">
         <h1 className="contact_header">Here’s what you’ll get from your free strategy call:</h1>
         <div className="flex gap-4 contact1 opacity-0" >
