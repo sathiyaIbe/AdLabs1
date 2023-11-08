@@ -65,8 +65,8 @@ const ctx=gsap.context(()=>{
   return(
   <section ref={triggerRef1} className="section_container justify-center pb-11">
 
-    <div className="self-center flex justify-center mt-6 mb-6  flex flex-col justify-end">
-      <img src='/MainLogo.svg' className="pt-6 w-[60%] items-center" alt='logo' />
+    <div className="self-center  mt-6 mb-6  flex flex-col">
+      <img src='/MainLogo.svg' className="pt-6 w-[60%] self-center" alt='logo' />
     </div>
     <div ref={sectionRef} className="md:w-[1200px] w-[90%]  self-center flex flex-col justify-center gap-3">
       <h1 className="hero_header opacity-1">Supercharge your growth with performance-based Ads that deliver <span className="text-[#0618DD]">real results. </span> </h1>
