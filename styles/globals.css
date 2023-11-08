@@ -12,7 +12,7 @@
 
 
 .section_container{
-  @apply md:min-h-[100vh] max-w-[100vw] flex flex-col  ;
+  @apply md:min-h-[100vh] max-w-[100vw] flex flex-col justify-center ;
 }
 .ball_img{
   visibility: hidden;

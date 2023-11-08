@@ -35,7 +35,7 @@ mm.add("(min-width:768px)",()=>{
   const t=gsap.timeline({
     scrollTrigger:{
       trigger:sectionRefContact.current,
-      start:'top center',
+      start:'top 100%',
       end:'bottom center',
       scrub:true,
     }
@@ -102,7 +102,7 @@ mm.add("(max-width:768px)",()=>{
 
 
   return(
-  <section ref={sectionRefContact} className="min-h-screen pb-24">
+  <section ref={sectionRefContact} className="min-h-screen flex flex-col justify-center pb-24">
     <div className="flex flex-col justify-around w-[80$%]">
      <div className="self-center md:w-[60%] mt-6 mb-6 flex flex-col gap-6">
       <h1 className="service_header contact">Book your free <span className="text-[#0618DD]"> 10-minute </span> consultation call</h1>
