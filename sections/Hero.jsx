@@ -63,12 +63,12 @@ const ctx=gsap.context(()=>{
     return () => ctx.revert();  //cleaedUp
 },[])
   return(
-  <section ref={triggerRef1} className="section_container pb-11">
+  <section ref={triggerRef1} className="section_container justify-center pb-11">
 
-    <div className="self-center flex justify-center mt-6 mb-6">
+    <div className="self-center flex justify-center mt-6 mb-6  flex flex-col justify-end">
       <img src='/MainLogo.svg' className="pt-6 w-[60%] items-center" alt='logo' />
     </div>
-    <div ref={sectionRef} className="md:w-[75%] w-[90%] self-center flex flex-col gap-3">
+    <div ref={sectionRef} className="md:w-[75%] w-[90%]  self-center flex flex-col justify-center gap-3">
       <h1 className="hero_header opacity-1">Supercharge your growth with performance-based Ads that deliver <span className="text-[#0618DD]">real results. </span> </h1>
       <p style={{fontFamily:'Spartan'}} className="hero_text md:w-[70%] self-center heroText hidden md:block">Ad Labs is a Paid Advertising Agency that will bring your brand forward with a Return on 
       Ad Spend. We leverage data to develop high-performing ad creatives and expertly manage campaigns to achieve maximum ROI.</p>
