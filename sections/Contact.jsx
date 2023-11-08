@@ -18,7 +18,7 @@ useEffect(()=>{
         trigger:sectionRefContact.current,
         start:'top center',
           end:'top 20%',
-        scrub:false,
+        scrub:true,
       },
     })
     t1.from(charss.words,{
@@ -37,7 +37,7 @@ mm.add("(min-width:768px)",()=>{
       trigger:sectionRefContact.current,
       start:'top center',
       end:'bottom center',
-      scrub:false,
+      scrub:true,
     }
   })
 
@@ -61,7 +61,7 @@ mm.add("(max-width:768px)",()=>{
       trigger:sectionRefContact.current,
       start:'top 40%',
       end:'bottom 60%',
-      scrub:false,
+      scrub:true,
     }
   })
 

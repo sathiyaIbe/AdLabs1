@@ -18,7 +18,7 @@ useEffect(()=>{
         trigger:sectionRefTeam.current,
         start:'top center',
           end:'top 20%',
-        scrub:false,
+        scrub:true,
       },
     })
 
@@ -75,7 +75,7 @@ useEffect(()=>{
           trigger:sectionRefTeam.current,
           start:'top center',
           end:'bottom 70%',
-          scrub:false,
+          scrub:true,
         }
       })
   

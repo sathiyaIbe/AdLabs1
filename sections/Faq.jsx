@@ -19,7 +19,7 @@ const Faq = () => {
       trigger:triggerRefFaq.current,
       start:'top center',
         end:'top 20%',
-      scrub:false,
+      scrub:true,
     },
    
       opacity:0,

@@ -35,7 +35,7 @@ mm.add("(min-width:768px)",()=>{
       trigger:triggerRef2.current,
       start:'top center',
       end:'top 20%',
-      scrub:false,
+      scrub:true,
       toggleActions:'play none none none',
     }
   })

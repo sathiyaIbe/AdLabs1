@@ -38,7 +38,7 @@ const t1=gsap.timeline({
     trigger:triggerRef.current,
     start:'top center',
     end:'top 20%',
-    scrub:false,
+    scrub:true,
   },
 })
 
