@@ -10,12 +10,12 @@ return(
 >
     {/* <Navbar /> */}
     <Hero /> 
-      <Services />
-   <BluePrint />
+       <Services />
+  <BluePrint />
      <Faq />
      <Team />
      <Contact />
-     <Footer />
+     <Footer /> 
    {/* <WhatsNew />
     <World />
     <Contact />

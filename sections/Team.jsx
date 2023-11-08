@@ -44,6 +44,7 @@ useEffect(()=>{
           start:'top center',
           end:'bottom center',
           scrub:false,
+          toggleActions:'play none none reset',
         }
       })
   
@@ -58,10 +59,10 @@ useEffect(()=>{
         .fromTo(arr1[i],{
           opacity:0,
           
-          rotationY:90,
+          scale:0,
         },{
           opacity:1,
-          rotationY:0,
+          scale:1,
           duration:0.3,
         },)
   
@@ -90,11 +91,12 @@ useEffect(()=>{
         .fromTo(arr1[i],{
           opacity:0,
           
-          rotationY:90,
+          scale:0,
         },{
           opacity:1,
-          rotationY:0,
+          scale:1,
           duration:0.5,
+          transform:'bottom'
         },)
   
       });
@@ -111,7 +113,7 @@ useEffect(()=>{
       <h1 className="service_header team" style={{color:'#0618DD'}}>The Team</h1>
       <p className="hero_text  team_desc md:w-[90%] self-center">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</p>
     </div>
-    <div className="w-[90%] self-center flex md:flex-row items-center  md:justify-center flex-col mt-11">
+    <div className="w-[90%] self-center flex md:flex-row items-center  md:justify-center flex-col gap-11 md:gap-0 mt-11">
       <div className="flex flex-col justify-center  " >
         <div className="flex justify-center gap-3 first_team opacity-0 ">
         <svg  width="70" height="63" viewBox="0 0 70 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +132,7 @@ useEffect(()=>{
 </svg> 
 
         </div>
-        <img id='second' src='/team_img_1.png'  className="opacity-0  relative bottom-[10px] w-[80%] self-center" alt='team_img'/>
+        <img id='second' src='/team_img_2.png'  className="opacity-0  relative bottom-[10px] w-[80%] self-center" alt='team_img'/>
       </div>
       <div className="flex flex-col " >
         <div className="flex justify-center gap-3 first_team opacity-0">
@@ -139,7 +141,7 @@ useEffect(()=>{
 </svg>
     <p className="team_text rotate-6">Farra</p>
         </div>
-        <img id='third' src='/team_img_1.png'   className="opacity-0 w-[80%] self-center" alt='team_img'/>
+        <img id='third' src='/team_img_3.png'   className="opacity-0 w-[80%] self-center" alt='team_img'/>
       </div>
     </div>
     </div>

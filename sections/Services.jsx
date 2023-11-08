@@ -64,8 +64,8 @@ mm.add("(max-width:768px)",()=>{
   const t1=gsap.timeline({
     scrollTrigger:{
       trigger:triggerRef2.current,
-      start:'bottom 100%',
-      end:'bottom 80%',
+      start:'top center',
+      end:'top 20%',
       scrub:true
     },
   })
@@ -146,15 +146,15 @@ gsap.timeline({
   }, []);
 
   return(
-  <section ref={triggerRef2} className="md:min-h-[100vh] flex flex-col justify-center pb-11 overflow-hidden">
+  <section ref={triggerRef2} className="md:min-h-[100vh] flex flex-col justify-center pb-11 ">
     <div className="self-center flex flex-col gap-6 mt-11 mb-6">
       <h1 className="service_header services" style={{color:'#0618DD'}}>Our Services</h1>
       <p className="service_text service_desc md:w-[70%] flex w-[90%] self-center">The key to successful advertising is not simply spending more money, but spending on the right platform, audience and ads.</p>
     </div>
    
     {/* <a className="w-fit" id="blue12">sssss</a> */}
-    <div className="svg_container mt-6  self-center">
-<svg id="svg" width="400" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="svg_container flex flex-col mt-6 md:p-0 self-center">
+<svg className="self-center" id="svg" width="350" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_218_69)">
 <path id="path1" d="M387.8 472.16C364.931 472.16 337.843 462.813 308.441 444.345C261.933 415.17 214.925 366.711 175.995 307.861C137.064 249.011 110.883 186.713 102.262 132.537C93.5505 77.6344 103.85 37.3878 131.347 19.1929C158.843 0.998011 199.907 7.25959 247.005 36.7979C293.513 65.9733 340.52 114.433 379.451 173.282C418.382 232.132 444.562 294.385 453.183 348.607C461.895 403.509 451.595 443.756 424.099 461.951C413.799 468.757 401.548 472.16 387.8 472.16ZM167.691 14.111C154.941 14.111 143.643 17.1965 134.205 23.458C108.524 40.4732 98.95 78.8595 107.344 131.675C115.874 185.17 141.738 246.697 180.26 304.957C218.782 363.217 265.245 411.132 311.118 439.944C356.401 468.348 395.468 474.61 421.195 457.64C446.922 440.625 456.45 402.239 448.056 349.423C439.526 295.928 413.663 234.401 375.14 176.141C336.618 117.881 290.155 69.9662 244.282 41.1538C215.697 23.2312 189.562 14.111 167.737 14.111H167.691Z" fill="black"/>
 <path   id="path2" d="M168.374 472.659C154.807 472.659 142.692 469.347 132.438 462.632C104.85 444.573 94.3236 404.372 102.808 349.424C111.157 295.202 137.066 232.814 175.679 173.737C214.292 114.705 261.118 65.974 307.444 36.6171C354.361 6.85193 395.424 0.408849 423.011 18.4676C450.599 36.5264 461.125 76.7276 452.641 131.675C444.292 185.897 418.383 248.286 379.77 307.363C341.157 366.394 294.331 415.125 248.005 444.482C218.512 463.176 191.333 472.705 168.374 472.705V472.659ZM387.03 13.6126C365.114 13.6126 338.888 22.8689 310.212 41.0184C264.475 70.0123 218.239 118.154 179.989 176.595C141.739 235.037 116.148 296.7 107.89 350.241C99.7684 403.056 109.478 441.442 135.251 458.321C144.643 464.492 155.85 467.532 168.419 467.532C190.335 467.532 216.561 458.276 245.237 440.126C290.974 411.133 337.21 362.991 375.46 304.549C413.71 246.108 439.301 184.445 447.559 130.904C455.681 78.0888 445.971 39.7026 420.198 22.8235C410.806 16.6527 399.599 13.6126 387.03 13.6126Z" fill="black"/>
