@@ -16,17 +16,19 @@ useEffect(()=>{
     const t1=gsap.timeline({
       scrollTrigger:{
         trigger:sectionRefContact.current,
-        start:'top 80%',
+        start:'top center',
           end:'top 20%',
-        scrub:true,
+        scrub:false,
       },
     })
-    t1.from(charss.chars,{
+    t1.from(charss.words,{
       opacity:0,
-      scaleY:0,
-      y:-20,
-      transformOrigin:'top',
-      stagger:0.1,
+      y:40,
+      transform:'bottom',
+      ease:"easeOut",
+  
+      stagger:0.2,
+      duration:1,
     })
 const mm=gsap.matchMedia()
 mm.add("(min-width:768px)",()=>{
@@ -35,7 +37,6 @@ mm.add("(min-width:768px)",()=>{
       trigger:sectionRefContact.current,
       start:'top center',
       end:'bottom center',
-      toggleActions:'play none none reset',
       scrub:false,
     }
   })
@@ -60,7 +61,6 @@ mm.add("(max-width:768px)",()=>{
       trigger:sectionRefContact.current,
       start:'top 40%',
       end:'bottom 60%',
-      toggleActions:'play none none reset',
       scrub:true,
     }
   })

@@ -14,18 +14,21 @@ const Faq = () => {
 
   const ctxFaq=gsap.context(()=>{
   const charss=SplitType.create('.faq', {type:'chars'})
-  gsap.from(charss.chars,{
+  gsap.from(charss.words,{
     scrollTrigger:{
       trigger:triggerRefFaq.current,
-      start:'top 80%',
+      start:'top center',
         end:'top 20%',
-      scrub:true,
+      scrub:false,
     },
-    opacity:0,
-    scaleY:0,
-    y:-20,
-    transformOrigin:'top',
-    stagger:0.1,
+   
+      opacity:0,
+      y:40,
+      transform:'bottom',
+      ease:"easeOut",
+      stagger:0.2,
+      duration:1,
+    
   })
 });
 return ()=>ctxFaq.revert();

@@ -1,6 +1,7 @@
 
 /* eslint-disable */
 'use client';
+import { Power1 } from 'gsap/all';
 import {gsap,ScrollTrigger} from 'gsap/all';
 import { useEffect, useLayoutEffect, useRef } from "react";
 import SplitType from "split-type";
@@ -14,7 +15,7 @@ const sectionRef=useRef()
   useEffect(()=>{
 
     const charss=SplitType.create('.hero_header', {type:'chars'})
-    const heroText=SplitType.create('.heroText',{types:'chars'})
+    const heroText=SplitType.create('.heroText',{types:'words'})
 
 const ctx=gsap.context(()=>{
     const pin = gsap.to(
@@ -35,26 +36,28 @@ const ctx=gsap.context(()=>{
         trigger:triggerRef1.current,
         start:'top 100%',
         end:'bottom 0%',
-        toggleActions:'play restart none reset'
+        // toggleActions:'play restart none reset'
       }
     })
 
 
- t.fromTo(charss.chars,{
-      scaleY:0,
-      y:-20,
-      transformOrigin:'top'},{
-      stagger:0.02,
-      duration:0.3,
-      scaleY:1,
-    }).fromTo(heroText.chars,{
-     fontFamily:'Spartan',
-      scaleY:0,
-      y:-20,
-      transformOrigin:'top'},{
-      stagger:0.02,
-      duration:0.3,
-      scaleY:1,
+ t.fromTo(charss.words,{
+      y:30,
+      opacity:0,
+ },{
+      duration:1,
+      opacity:1,
+      stagger:0.1,
+      y:0,
+      ease:"easeOut"
+    }).fromTo(heroText.words,{
+      y:20,
+      opacity:0,
+ },{
+      opacity:1,
+      stagger:0.05,
+      y:0,
+      ease:"easeOut"
     })
   }, triggerRef1)
     return () => ctx.revert();  //cleaedUp

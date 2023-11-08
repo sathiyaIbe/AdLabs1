@@ -10,33 +10,31 @@ useEffect(()=>{
   const ctxTeam=gsap.context(()=>{
     const arr1=["#first","#second","#third"]
     const charss=SplitType.create('.team', {type:'chars'})
-    const heroText=SplitType.create('.team_desc',{types:'chars'})
+    const heroText=SplitType.create('.team_desc',{type:'chars'})
 
 
     const t1=gsap.timeline({
       scrollTrigger:{
         trigger:sectionRefTeam.current,
-        start:'top 80%',
+        start:'top center',
           end:'top 20%',
-        scrub:true,
+        scrub:false,
       },
     })
 
 
-    t1.from(charss.chars,{
-      
+    t1.from(charss.words,{
       opacity:0,
-      scaleY:0,
-      y:-20,
-      transformOrigin:'top',
-      stagger:0.1,
-    }).from(heroText.chars,{
-      fontFamily:'Spartan',
+      y:40,
+      transform:'bottom',
+      ease:"easeOut",
+  
+      stagger:0.2,
+      duration:1,
+    }).from(heroText.words,{
+      y:20,
       opacity:0,
-      scaleY:0,
-      y:-20,
-      transformOrigin:'top',
-      stagger:0.1,
+      stagger:0.02,
     })
     const mm=gsap.matchMedia()
     mm.add("(min-width:768px)",()=>{
@@ -46,7 +44,6 @@ useEffect(()=>{
           start:'top center',
           end:'bottom center',
           scrub:false,
-          toggleActions:'play none none reset'
         }
       })
   
@@ -78,8 +75,7 @@ useEffect(()=>{
           trigger:sectionRefTeam.current,
           start:'top center',
           end:'bottom 70%',
-          scrub:true,
-          toggleActions:'play none none reset'
+          scrub:false,
         }
       })
   

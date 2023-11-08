@@ -25,33 +25,39 @@ const Services = () => {
     // )
 const mm=gsap.matchMedia()
 const charss=SplitType.create('.services', {type:'chars'})
-const heroText=SplitType.create('.service_desc',{types:'chars'})
+const heroText=SplitType.create('.service_desc',{type:'chars'})
+console.log(heroText)
 
 mm.add("(min-width:768px)",()=>{
 
   const t1=gsap.timeline({
     scrollTrigger:{
       trigger:triggerRef2.current,
-      start:'top 80%',
+      start:'top center',
       end:'top 20%',
-      scrub:true,
+      scrub:false,
+      toggleActions:'play none none none',
     }
   })
 
-  t1.from(charss.chars,{
-    
+  t1.from(charss.words,{
     opacity:0,
-    scaleY:0,
-    y:-20,
-    transformOrigin:'top',
-    stagger:0.1,
-  }).from(heroText.chars,{
+    y:40,
+    transform:'bottom',
+    ease:"easeOut",
+
+    stagger:0.2,
+    duration:1,
+  }).from(heroText.words,{
+    y:20,
     opacity:0,
-    fontFamily:'Spartan',
-    scaleY:0,
-    y:-20,
-    transformOrigin:'top',
-    stagger:0.1,
+    stagger:0.02,
+  }).from(".svg_container",{
+    opacity:0,
+    y:40,
+    transform:'bottom',
+    ease:"easeOut",
+    duration:1,
   })
 })
 mm.add("(max-width:768px)",()=>{
@@ -60,24 +66,27 @@ mm.add("(max-width:768px)",()=>{
       trigger:triggerRef2.current,
       start:'bottom 100%',
       end:'bottom 80%',
-      toggleActions:'play restart none reset',
-      scrub:true
+      scrub:false
     },
   })
-  t1.from(charss.chars,{
-   
+  t1.from(charss.words,{
     opacity:0,
-    scaleY:0,
-    y:-20,
-    transformOrigin:'top',
-    stagger:0.1,
-  }).from(heroText.chars,{
-   
+    y:40,
+    transform:'bottom',
+    ease:"easeOut",
+
+    stagger:0.5,
+    duration:1,
+  }).from(heroText.words,{
+    y:20,
     opacity:0,
-    scaleY:0,
-    y:-20,
-    transformOrigin:'top',
-    stagger:0.1,
+    stagger:0.02,
+  }).from(".svg_container",{
+    opacity:0,
+    y:40,
+    transform:'bottom',
+    ease:"easeOut",
+    duration:1,
   })
 })  
 
@@ -140,12 +149,11 @@ gsap.timeline({
   <section ref={triggerRef2} className="md:min-h-[100vh] flex flex-col pb-11">
     <div className="self-center flex flex-col gap-6 mt-11 mb-6">
       <h1 className="service_header services" style={{color:'#0618DD'}}>Our Services</h1>
-      <p className="service_text service_desc md:w-[60%] w-[90%] self-center">The key to successful advertising 
-      is not simply spending more money, but spending on the right platform, audience and ads.</p>
+      <p className="service_text service_desc md:w-[70%] flex w-[90%] self-center">The key to successful advertising is not simply spending more money, but spending on the right platform, audience and ads.</p>
     </div>
    
     {/* <a className="w-fit" id="blue12">sssss</a> */}
-    <div className="svg_containe mt-6  self-center">
+    <div className="svg_container mt-6  self-center">
 <svg id="svg" width="400" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_218_69)">
 <path id="path1" d="M387.8 472.16C364.931 472.16 337.843 462.813 308.441 444.345C261.933 415.17 214.925 366.711 175.995 307.861C137.064 249.011 110.883 186.713 102.262 132.537C93.5505 77.6344 103.85 37.3878 131.347 19.1929C158.843 0.998011 199.907 7.25959 247.005 36.7979C293.513 65.9733 340.52 114.433 379.451 173.282C418.382 232.132 444.562 294.385 453.183 348.607C461.895 403.509 451.595 443.756 424.099 461.951C413.799 468.757 401.548 472.16 387.8 472.16ZM167.691 14.111C154.941 14.111 143.643 17.1965 134.205 23.458C108.524 40.4732 98.95 78.8595 107.344 131.675C115.874 185.17 141.738 246.697 180.26 304.957C218.782 363.217 265.245 411.132 311.118 439.944C356.401 468.348 395.468 474.61 421.195 457.64C446.922 440.625 456.45 402.239 448.056 349.423C439.526 295.928 413.663 234.401 375.14 176.141C336.618 117.881 290.155 69.9662 244.282 41.1538C215.697 23.2312 189.562 14.111 167.737 14.111H167.691Z" fill="black"/>

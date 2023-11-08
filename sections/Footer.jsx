@@ -4,12 +4,12 @@
 const Footer = () => (
   <footer className="flex flex-col pb-11 max-w-[100vw] overflow-hidden ">
   <div className="w-[90%] flex flex-col gap-6 self-center">
-<div className="flex  self-center">
- <h1 className="footer_header relative  ">AD</h1>
- <img src='./footer_flask.png' className="object-none relative hidden md:block z-40 right-[4%] mt-6" alt=''/>
+<div className="flex self-center">
+ <h1 className="footer_header relative text-center md:left-[4%] left-[2%] ">AD</h1>
+ <img src='./footer_flask.png' className="object-none relative hidden md:block z-40 right-[0%] mt-6" alt=''/>
  <img src='./footer_flask_mob.png' className="object-none relative md:hidden z-40 right-[4%] mt-6" alt=''/>
 
- <h1 className="footer_header  relative right-[7%]">LABS</h1>
+ <h1 className="footer_header  relative right-[8%] md:right-[4%]">LABS</h1>
 
 </div>
 
