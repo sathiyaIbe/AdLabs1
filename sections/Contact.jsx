@@ -61,7 +61,7 @@ mm.add("(max-width:768px)",()=>{
       trigger:sectionRefContact.current,
       start:'top 40%',
       end:'bottom 60%',
-      scrub:true,
+      scrub:false,
     }
   })
 
