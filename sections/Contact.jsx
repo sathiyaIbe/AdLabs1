@@ -104,7 +104,7 @@ mm.add("(max-width:768px)",()=>{
   return(
   <section ref={sectionRefContact} className="min-h-screen flex flex-col justify-center pb-24">
     <div className="flex flex-col justify-around ">
-     <div className="self-center md:w-[60%] w-[90%]  mt-6 mb-6 flex flex-col gap-6">
+     <div className="self-center md:w-[60%] w-[80%]  mt-6 mb-6 flex flex-col gap-6">
       <h1 className="service_header contact">Book your free <span className="text-[#0618DD]"> 10-minute </span> consultation call</h1>
     </div>
     <div className="flex flex-col  justify-center mt-11">
