@@ -69,11 +69,11 @@ mm.add("(max-width:768px)",()=>{
   arr.map((element,i) => {
     t.fromTo(element,{
       opacity:0,
-      x:50,
+      y:50,
      
     },{
       opacity:1,
-      x:0,
+      y:0,
       duration:1
     })
   });
