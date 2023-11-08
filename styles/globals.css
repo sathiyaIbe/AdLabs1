@@ -75,7 +75,7 @@
 }
 
 .footer_header{
-  @apply text-[90px] md:text-[280px] lg:text-[280px]  font-[Manrope-Extra] text-[#0618DD];
+  @apply text-[90px] md:text-[180px] lg:text-[280px]  font-[Manrope-Extra] text-[#0618DD];
 
 }
 
