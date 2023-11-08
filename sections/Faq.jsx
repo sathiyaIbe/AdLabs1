@@ -46,14 +46,14 @@ return ()=>ctxFaq.revert();
     <h1 className="service_header faq mt-11 mb-11">Frequently
 asked questions</h1>
 <div className="flex flex-col self-center gap-6 md:gap-11">
-<AccordItem header="What type of businesses do you work with?" text={data1} />
+<AccordItem header="What type of businesses do you work with?" text={data1} no={"0"} />
             <hr className="hr_line_question " />
-            <AccordItem header="Do you work with brands that generate revenue of <RM5K/mth?" text={data2} />
+            <AccordItem header="Do you work with brands that generate revenue of <RM5K/mth?" text={data2} no={"1"} />
             <hr className="hr_line_question " />
-            <AccordItem header="Can I cancel if I don’t like it?" text={data3}  />
+            <AccordItem header="Can I cancel if I don’t like it?" no={"2"} text={data3}  />
             <hr className="hr_line_question " />
 
-            <AccordItem header="Is it worth it for me to invest in my own performance team?" text={data4} />
+            <AccordItem header="Is it worth it for me to invest in my own performance team?" no={"3"} text={data4} />
 
             <hr className="hr_line_question " />
 </div>

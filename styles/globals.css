@@ -19,13 +19,13 @@
 }
 
 .hero_header{
-  @apply font-[Manrope-Bold] text-[32px] md:text-[64px]  lg:text-[72px] leading-[40px] md:leading-[72px] lg:leading-[90px] text-[#000] text-center;
+  @apply font-[Manrope-Bold] text-[22px] md:text-[64px]  lg:text-[72px] leading-[32px] md:leading-[72px] lg:leading-[90px] text-[#000] text-center;
 }
 
 
 
 .hero_text{
-  @apply font-[Spartan] text-[18px] md:text-[20px]  lg:text-[20px] leading-[30px] md:leading-[36px] lg:leading-[39px] text-[#282828] text-center;
+  @apply font-[Spartan] text-[18px] md:text-[20px]  lg:text-[20px] leading-[22px] md:leading-[36px] lg:leading-[39px] text-[#282828] text-center;
 
 }
 
@@ -37,7 +37,7 @@
 }
 
 .service_text{
-  @apply font-[Spartan] text-[18px] leading-[39px] text-[#282828] text-center;
+  @apply font-[Spartan] text-[18px] leading-[22px] md:leading-[39px] text-[#282828] text-center;
 
 }
 
@@ -49,7 +49,7 @@
   @apply border-[2px] border-b-[#0618DD] 
 }
 .blue_description{
-  @apply font-[Spartan] text-[18px] leading-[39px] text-[#000]  md:text-left text-center;
+  @apply font-[Spartan] text-[18px] leading-[22px] md:leading-[39px] text-[#000]  md:text-left text-center;
 
 }
 
@@ -75,7 +75,7 @@
 }
 
 .footer_header{
-  @apply text-[90px] md:text-[180px] lg:text-[280px]  font-[Manrope-Extra] text-[#0618DD];
+  @apply text-[75px] md:text-[180px] lg:text-[280px] text-center  font-[Manrope-Extra] text-[#0618DD];
 
 }
 
@@ -85,7 +85,7 @@
 }
 
 .footer_text{
-  @apply text-[14px] md:text-[16px] lg:text-[16px] leading-[18px] md:leading-[20px]   font-[Manrope-Medium] text-[#0618DD] ;
+  @apply text-[12px] md:text-[16px] lg:text-[16px] leading-[18px] md:leading-[20px]   font-[Manrope-Medium] text-[#0618DD] ;
 
 }
 

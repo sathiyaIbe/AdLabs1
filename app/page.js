@@ -9,10 +9,10 @@ return(
   
 >
     {/* <Navbar /> */}
-    <Hero /> 
-       <Services />
+    <Hero />  
+        <Services />
   <BluePrint />
-     <Faq />
+      <Faq />
      <Team />
      <Contact />
      <Footer /> 
