@@ -60,7 +60,7 @@ mm.add("(max-width:768px)",()=>{
     scrollTrigger:{
       trigger:sectionRefContact.current,
       start:'top 40%',
-      end:'bottom 60%',
+      end:'bottom 90%',
       scrub:true,
     }
   })

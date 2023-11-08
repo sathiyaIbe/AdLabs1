@@ -236,7 +236,7 @@ gsap.timeline({
     <div className="flex md:flex-row    flex-col gap-11   self-center">
       <div  ref={textContainerRef} className="md:min-w-[50%] text_svg_container flex flex-col text-left  self-center md:order-1 order-2">
         <div className="flex md:justify-end  justify-center">
-          <div className="flex flex-col w-[60%]">
+          <div className="flex flex-col md:w-[60%] w-[80%]">
 <h1 ref={textRef} className="blue_header  ">
 AUDIT
 
