@@ -45,7 +45,7 @@ return ()=>ctxFaq.revert();
     <div className="w-[80%] self-center">
     <h1 className="service_header faq mt-11 mb-11">Frequently
 asked questions</h1>
-<div className="flex flex-col self-center gap-11">
+<div className="flex flex-col self-center gap-6 md:gap-11">
 <AccordItem header="What type of businesses do you work with?" text={data1} />
             <hr className="hr_line_question " />
             <AccordItem header="Do you work with brands that generate revenue of <RM5K/mth?" text={data2} />

@@ -233,9 +233,9 @@ gsap.timeline({
       <h1 className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
       <p className="hero_text blueprint_desc">We have the proven track record to get the job done.</p>
     </div>
-    <div className="flex md:flex-row  justify-end  flex-col    self-center">
+    <div className="flex md:flex-row   flex-col    self-center">
       <div  ref={textContainerRef} className="md:min-w-[50%] text_svg_container flex flex-col text-left  self-center md:order-1 order-2">
-        <div className="flex justify-end ">
+        <div className="flex md:justify-end  justify-center">
           <div className="flex flex-col w-[60%]">
 <h1 ref={textRef} className="blue_header  ">
 AUDIT
@@ -246,8 +246,8 @@ AUDIT
 </div>
 </div>
       </div>
-      <div className="md:min-w-[50%]  svg_container_blue       md:order-2 order-1 ">
-      <svg width="632" height="322" viewBox="0 0 723 422" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="md:min-w-[50%] max-w-[40%]   svg_container_blue       md:order-2 order-1 ">
+      <svg width="432" height="322" viewBox="0 0 723 422" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 <path d="M39.5191 80.1289C39.1654 80.1289 38.8116 80.011 38.5084 79.7919C37.7672 79.236 37.6156 78.1745 38.1883 77.4332L38.7611 76.6919C40.8162 74.0131 43.1578 70.9636 43.1578 67.4592C43.1578 66.5326 43.9158 65.7744 44.8424 65.7744C45.7689 65.7744 46.5269 66.5326 46.5269 67.4592C46.5269 72.1093 43.6969 75.7821 41.4227 78.7474L40.8668 79.4718C40.5299 79.9099 40.0245 80.1458 39.5191 80.1458V80.1289Z" fill="#B4B4B4"/>
 <path d="M34.2129 91.1136C33.2864 91.1136 32.5283 90.3555 32.5283 89.4288C32.5283 84.7788 35.3584 81.0891 37.6326 78.1407L38.1885 77.4162C38.7444 76.6749 39.8057 76.5233 40.5469 77.0961C41.2881 77.6521 41.4397 78.7135 40.8669 79.4548L40.2942 80.1961C38.239 82.8749 35.8975 85.9244 35.8975 89.4288C35.8975 90.3555 35.1394 91.1136 34.2129 91.1136Z" fill="#B4B4B4"/>
