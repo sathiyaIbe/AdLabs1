@@ -953,9 +953,9 @@ AUDIT
       <p className="hero_text blueprint_desc text-center  ">We have the proven track record to get the job done.</p>
     </div>
     </div>
-    <div className="        self-center">
-      <div className="flex flex-col h-[70vh] justify-evenly ">
-      <div  ref={textContainerRef_1} className="md:min-w-[40%] text_svg_container flex flex-col text-left  self-center md:order-1 order-2 ">
+    <div className="  h-[70vh] flex flex-col justify-center      self-center">
+      <div className="flex flex-col h-[50vh] justify-between">
+      <div  ref={textContainerRef_1} className=" text_svg_container flex flex-col text-left  self-center md:order-1 order-2 ">
         <div className="flex md:justify-end  justify-center">
           <div className="flex flex-col md:w-[60%] w-[80%]">
 <h1 ref={textRef_1} className="blue_header  ">
