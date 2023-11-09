@@ -946,15 +946,15 @@ AUDIT
     </div>
     <div className="md:hidden">
     <section id="main1" ref={triggerRef1} className="min-h-[300vh] flex flex-col">
-    <div className="self-center  flex flex-col md:justify-center  sticky top-0 min-h-[100vh]  pb-6">
-    <div className="self-center pt-11 pb-6 flex  flex-col gap-6 h-[30vh] w-[90%]">
+    <div className="self-center  flex flex-col md:justify-center  sticky top-0 min-h-[100vh]  ">
+    <div className="self-center pt-11 flex  flex-col gap-6 min-h-[30vh] w-[90%]">
       <h1 className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
       <div className="w-[70%] self-center">
       <p className="hero_text blueprint_desc text-center  ">We have the proven track record to get the job done.</p>
     </div>
     </div>
-    <div className="  h-[70vh] flex flex-col justify-center      self-center">
-      <div className="flex flex-col h-[50vh] justify-between">
+    <div className="  min-h-[70vh] flex flex-col justify-center      self-center">
+      <div className="flex flex-col min-h-[50vh] justify-between">
       <div  ref={textContainerRef_1} className=" text_svg_container flex flex-col text-left  self-center md:order-1 order-2 ">
         <div className="flex md:justify-end  justify-center">
           <div className="flex flex-col md:w-[60%] w-[80%]">
