@@ -947,7 +947,7 @@ AUDIT
     <div className="md:hidden">
     <section id="main1" ref={triggerRef1} className="min-h-[300vh] flex flex-col">
     <div className="self-center  flex flex-col justify-center gap-11 sticky top-0 min-h-[100vh]  ">
-    <div className="self-center pt-11 flex  flex-col   w-[90%]">
+    <div className="self-center flex  flex-col   w-[90%]">
       <h1 className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
       <div className="w-[70%] self-center">
       <p className="hero_text blueprint_desc text-center  ">We have the proven track record to get the job done.</p>
