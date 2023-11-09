@@ -9,8 +9,8 @@ return(
   
 >
     {/* <Navbar /> */}
-    <Hero />  
-        <Services />
+    {/* <Hero />  
+        <Services /> */}
   <BluePrint />
       <Faq />
      <Team />
