@@ -132,8 +132,8 @@ mm.add("(max-width:768px)",()=>{
       </div>
       <div  className="basis-2/3  calendly order-1 md:order-2">
       <InlineWidget pageSettings={pageSettings} styles={{
-  height: '350px'
-}}  url="https://calendly.com/sathiya_" />
+  height: '350px',minWidth:'320px'
+}}  url="https://calendly.com/losh-param/30min" />
       {/* <div class="calendly-inline-widget"
 url="https://calendly.com/sathiya_"
 style={{"minWidth":"320px", "height":"750px"}}></div> */}
