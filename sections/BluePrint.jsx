@@ -67,7 +67,6 @@ gsap.timeline({
   scrollTrigger:{
     trigger:'#main',
     start:'top 0%',
-     scrub:true,
   }
 }).from(".svg_container_blue",{
   opacity:0,
@@ -263,7 +262,6 @@ t2.from(charss.words,{
       scrollTrigger:{
         trigger:'#main1',
         start:'top 0%',
-         scrub:true,
       }
     }).from(".svg_container_blue",{
       opacity:0,
