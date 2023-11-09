@@ -67,7 +67,7 @@ gsap.timeline({
   scrollTrigger:{
     trigger:'#main',
     start:'top 0%',
-     
+     scrub:true,
   }
 }).from(".svg_container_blue",{
   opacity:0,
@@ -263,7 +263,7 @@ t2.from(charss.words,{
       scrollTrigger:{
         trigger:'#main1',
         start:'top 0%',
-         
+         scrub:true,
       }
     }).from(".svg_container_blue",{
       opacity:0,
@@ -954,7 +954,7 @@ AUDIT
     </div>
     </div>
     <div className="  min-h-[50vh] flex flex-col     justify-start   self-center">
-      <div className="flex flex-col min-h-[50vh]  justify-between">
+      <div className="flex flex-col min-h-[45vh]  justify-between">
       <div  ref={textContainerRef_1} className=" text_svg_container flex flex-col text-left  self-center md:order-1 order-2 ">
         <div className="flex md:justify-end  justify-center">
           <div className="flex flex-col md:w-[60%] w-[80%]">
