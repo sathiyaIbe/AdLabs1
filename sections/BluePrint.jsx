@@ -284,10 +284,11 @@ t2.from(charss.words,{
             onEnter: self => {
               textRef_1.current.innerText = "Game Plan",
               textRef2_1.current.innerText="We need to take a holistic view, looking beyond ad data to identify your specific needs and develop a tailored growth plan",
-              gsap.from(textContainerRef_1.current,{
-              opacity:0,
-              duration:0.5,
-              }),
+            //   gsap.from(textContainerRef_1.current,{
+            //     ease:'elastic',
+            // duration:0.5,
+
+            //   }),
               gsap.to("#svg11",{
                 attr:{
                   fill:"#B4B4B4",
@@ -297,12 +298,11 @@ t2.from(charss.words,{
           },
             onLeaveBack: self => {textRef_1.current.innerText = "Audit",
             textRef2_1.current.innerText=">Deep-dive audit and growth plan tailored to your brand and niche, with data-led decisions backed by our years of experience",
-            gsap.from(textContainerRef_1.current,{
-            
-            opacity:0,
-duration:0.5,
+            // gsap.from(textContainerRef_1.current,{
+            // duration:0.5,
+            //   ease:'elastic'
              
-            }),
+            // }),
             gsap.to("#svg11",{
               attr:{
                 fill:"#0618DD",
@@ -326,13 +326,12 @@ duration:0.5,
           scrollTrigger:{
             trigger:'#main1',
             start:'top -90%',
-            end:'top -110%',
+            end:'top -120%',
             onEnter: self => {textRef_1.current.innerText = "Creative Development",
             textRef2_1.current.innerText="We create results-oriented ad creatives to communicate your key message to your target audience.",
             gsap.from(textContainerRef_1.current,{
     
-            opacity:0,
-duration:0.5,
+              
     
             })
           
@@ -341,8 +340,7 @@ duration:0.5,
             textRef2_1.current.innerText="We need to take a holistic view, looking beyond ad data to identify your specific needs and develop a tailored growth plan",
             gsap.from(textContainerRef_1.current,{
     
-            opacity:0,
-duration:0.5,
+              
     
             })
           
@@ -362,14 +360,13 @@ duration:0.5,
         gsap.timeline({
           scrollTrigger:{
             trigger:'#main1',
-            start:'top -110%',
-            end:'top -150%',
+            start:'top -120%',
+            end:'top -170%',
             onEnter: self => {textRef_1.current.innerText = "Testing",
             textRef2_1.current.innerText="We'll help you measure the impact on your ads and overall business at each test, every step of the way.",
             gsap.from(textContainerRef_1.current,{
     
-            opacity:0,
-duration:0.5,
+              
     
             })
           
@@ -378,8 +375,7 @@ duration:0.5,
             textRef2_1.current.innerText="We create results-oriented ad creatives to communicate your key message to your target audience. ",
             gsap.from(textContainerRef_1.current,{
     
-            opacity:0,
-duration:0.5,
+              
     
             })
     
@@ -397,14 +393,13 @@ duration:0.5,
         gsap.timeline({
           scrollTrigger:{
             trigger:'#main1',
-            start:'top -150%',
+            start:'top -170%',
             end:'top -190%',
             onEnter: self => {textRef_1.current.innerText = "Analyze & Scale",
             textRef2_1.current.innerText="We need to take a holistic view, looking beyond ad data to identify your specific needs and develop a tailored growth plan",
             gsap.from(textContainerRef_1.current,{
     
-            opacity:0,
-duration:0.5,
+              
     
             })
           
@@ -413,8 +408,7 @@ duration:0.5,
             textRef2_1.current.innerText="We'll help you measure the impact on your ads and overall business at each test, every step of the way.",
             gsap.from(textContainerRef_1.current,{
     
-            opacity:0,
-duration:0.5,
+              
     
             })
     
