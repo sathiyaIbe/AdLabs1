@@ -41,7 +41,7 @@ return ()=>ctxFaq.revert();
   const data3=["There are no contracts or long-term commitments. You can pause or cancel your subscription anytime in the first 6 months."]
   const data4=["With our proven track record of success in managing creative and analytical teams, we can help you to avoid the risks associated with this process by taking care of everything from campaign planning and execution to quality control."]
   return(
-  <section ref={triggerRefFaq} id='FAQ' className=" flex flex-col pb-24 ">
+  <section ref={triggerRefFaq} id='FAQ' className=" flex flex-col  pb-24 ">
     <div className="w-[80%] self-center">
     <h1 className="service_header faq mt-11 mb-11">Frequently
 asked questions</h1>

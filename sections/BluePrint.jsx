@@ -279,13 +279,14 @@ t2.from(charss.words,{
         gsap.timeline({
           scrollTrigger:{
             trigger:'#main1',
-            start:'top -30%',
-            end:'top -70%',
+            start:'top -40%',
+            end:'top -90%',
             onEnter: self => {
               textRef_1.current.innerText = "Game Plan",
               textRef2_1.current.innerText="We need to take a holistic view, looking beyond ad data to identify your specific needs and develop a tailored growth plan",
               gsap.from(textContainerRef_1.current,{
-                y:40,
+              opacity:0,
+              duration:0.5,
               }),
               gsap.to("#svg11",{
                 attr:{
@@ -298,7 +299,8 @@ t2.from(charss.words,{
             textRef2_1.current.innerText=">Deep-dive audit and growth plan tailored to your brand and niche, with data-led decisions backed by our years of experience",
             gsap.from(textContainerRef_1.current,{
             
-              y:-40,
+            opacity:0,
+duration:0.5,
              
             }),
             gsap.to("#svg11",{
@@ -323,13 +325,14 @@ t2.from(charss.words,{
         gsap.timeline({
           scrollTrigger:{
             trigger:'#main1',
-            start:'top -70%',
+            start:'top -90%',
             end:'top -110%',
             onEnter: self => {textRef_1.current.innerText = "Creative Development",
             textRef2_1.current.innerText="We create results-oriented ad creatives to communicate your key message to your target audience.",
             gsap.from(textContainerRef_1.current,{
     
-              y:40,
+            opacity:0,
+duration:0.5,
     
             })
           
@@ -338,7 +341,8 @@ t2.from(charss.words,{
             textRef2_1.current.innerText="We need to take a holistic view, looking beyond ad data to identify your specific needs and develop a tailored growth plan",
             gsap.from(textContainerRef_1.current,{
     
-              y:-40,
+            opacity:0,
+duration:0.5,
     
             })
           
@@ -364,7 +368,8 @@ t2.from(charss.words,{
             textRef2_1.current.innerText="We'll help you measure the impact on your ads and overall business at each test, every step of the way.",
             gsap.from(textContainerRef_1.current,{
     
-              y:40,
+            opacity:0,
+duration:0.5,
     
             })
           
@@ -373,7 +378,8 @@ t2.from(charss.words,{
             textRef2_1.current.innerText="We create results-oriented ad creatives to communicate your key message to your target audience. ",
             gsap.from(textContainerRef_1.current,{
     
-              y:-40,
+            opacity:0,
+duration:0.5,
     
             })
     
@@ -397,7 +403,8 @@ t2.from(charss.words,{
             textRef2_1.current.innerText="We need to take a holistic view, looking beyond ad data to identify your specific needs and develop a tailored growth plan",
             gsap.from(textContainerRef_1.current,{
     
-              y:40,
+            opacity:0,
+duration:0.5,
     
             })
           
@@ -406,7 +413,8 @@ t2.from(charss.words,{
             textRef2_1.current.innerText="We'll help you measure the impact on your ads and overall business at each test, every step of the way.",
             gsap.from(textContainerRef_1.current,{
     
-              y:-40,
+            opacity:0,
+duration:0.5,
     
             })
     
@@ -944,15 +952,15 @@ AUDIT
     </div>
     <div className="md:hidden">
     <section id="main1" ref={triggerRef1} className="min-h-[300vh] flex flex-col">
-    <div className="self-center  flex flex-col md:justify-center  sticky top-0 min-h-[100vh]  ">
-    <div className="self-center pt-11 flex  flex-col gap-6 min-h-[30vh] w-[90%]">
+    <div className="self-center  flex flex-col justify-center gap-11 sticky top-0 min-h-[100vh]  ">
+    <div className="self-center pt-11 flex  flex-col   w-[90%]">
       <h1 className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></h1>
       <div className="w-[70%] self-center">
       <p className="hero_text blueprint_desc text-center  ">We have the proven track record to get the job done.</p>
     </div>
     </div>
-    <div className="  min-h-[50vh] flex flex-col     justify-start   self-center">
-      <div className="flex flex-col min-h-[45vh]  justify-between">
+    <div className="   flex flex-col    self-center">
+      <div className="flex flex-col  gap-11 ">
       <div  ref={textContainerRef_1} className=" text_svg_container flex flex-col text-left  self-center md:order-1 order-2 ">
         <div className="flex md:justify-end  justify-center">
           <div className="flex flex-col md:w-[60%] w-[80%]">
