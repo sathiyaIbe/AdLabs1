@@ -2,6 +2,7 @@
 'use client'
 import React, { useState } from 'react'
 import gsap from 'gsap'
+import { animations } from 'framer-motion'
 
 const AccordItem = ({header,text,no}) => {
     const [active,setActive]=useState(Boolean)
@@ -9,15 +10,18 @@ const AccordItem = ({header,text,no}) => {
       const arr=[".icon0",".icon1", '.icon2', ".icon3"]
       const arr1=[".container0",".container1", '.container2', ".container3"]
 
-        gsap.to(arr[no],{
+     const a=   gsap.to(arr[no],{
          rotate:0,
         })
-        gsap.from(arr1[no],{
+    const b=    gsap.fromTo(arr1[no],{
           opacity:0,
           duration:1,
-          y:40,
-          ease:'easeOut'
+          y:40},{
+            ease:'easeOut',
+             y:0,
+             opacity:1,
         })
+        
         event.preventDefault();
         setActive(!active);
       };
