@@ -194,7 +194,7 @@ mm.add("(max-width:768px)",()=>{
   }, []);
 
   return(
-  <section ref={triggerRef2} className="md:min-h-[100vh]  flex flex-col justify-center pb-11 ">
+  <section id="WhatWeDo" ref={triggerRef2} className="md:min-h-[100vh]  flex flex-col justify-center pb-11 ">
     <div className="self-center flex flex-col gap-6 mt-11 mb-6">
       <h1 className="service_header services" style={{color:'#0618DD'}}>Our Services</h1>
       <p className="service_text service_desc md:w-[70%] flex w-[90%] self-center">The key to successful advertising is not simply spending more money, but spending on the right platform, audience and ads.</p>

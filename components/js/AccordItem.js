@@ -39,7 +39,7 @@ const AccordItem = ({header,text,no}) => {
      
       </div>
       <div
-        className={`md:pl-[62px] duration-600 ease-in-out faq_tag ${"container"+no}   ${
+        className={`md:pl-[62px]   ease-in-out faq_tag ${"container"+no}   ${
           active ? "block" : "hidden"
         }`}
       >

@@ -42,14 +42,14 @@
 }
 
 .blue_header{
-  @apply font-[Spartan-Bold] text-[22px] md:text-[28px]  lg:text-[32px] leading-[28px] md:leading-[32px] lg:leading-[36px] text-[#0618DD]  uppercase text-center  md:text-left;
+  @apply font-[Spartan-Bold] text-[22px] md:text-[28px]  lg:text-[32px]  text-[#0618DD]  uppercase text-center  md:text-left;
 }
 
 .hr_line_question{
   @apply border-[2px] border-b-[#0618DD] 
 }
 .blue_description{
-  @apply font-[Spartan] text-[18px] leading-[22px] md:leading-[39px] text-[#000]  md:text-left text-center;
+  @apply font-[Spartan] text-[18px] leading-[22px] md:leading-[28px] text-[#000]  md:text-left text-center;
 
 }
 

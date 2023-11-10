@@ -63,7 +63,7 @@ const ctx=gsap.context(()=>{
     return () => ctx.revert();  //cleaedUp
 },[])
   return(
-  <section ref={triggerRef1} className="section_container justify-center pb-24">
+  <section id="WhoWeAre" ref={triggerRef1} className="section_container justify-center pb-24">
 
     <div className="self-center  mt-6 mb-6  flex flex-col">
       <img src='/Logo_Animation.gif' className="pt-6 w-[60%] self-center" alt='logo' />

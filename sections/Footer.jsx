@@ -28,10 +28,10 @@ const Footer = () => (
 
 <div className="self-center hidden md:block ">
   <div className=" flex gap-6">
- <a href='#Main' className="footer_button ">Who we are</a>
- <a href='#Services' className="footer_button ">What we do</a>
- <a href='FAQ' className="footer_button">FAQ</a>
- <a href='Contact' className="footer_button">Grow with us</a>
+ <a href='#WhoWeAre' className="footer_button ">Who we are</a>
+ <a href='#WhatWeDo' className="footer_button ">What we do</a>
+ <a href='#FAQ' className="footer_button">FAQ</a>
+ <a href='#Contact' className="footer_button">Grow with us</a>
 
  </div>
 </div>
