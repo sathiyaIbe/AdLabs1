@@ -2,6 +2,9 @@
 'use client';
 import {gsap, MotionPathPlugin,ScrollTrigger} from "gsap/all";
 import { useEffect, useLayoutEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../utils/motion";
+
 import SplitType from "split-type";
 const Services = () => {
   const triggerRef2 = useRef(null);
@@ -24,41 +27,41 @@ const Services = () => {
     //   }
     // )
 const mm=gsap.matchMedia()
-const charss=SplitType.create('.services', {type:'chars'})
-const heroText=SplitType.create('.service_desc',{type:'chars'})
-console.log(heroText)
+// const charss=SplitType.create('.services', {type:'chars'})
+// const heroText=SplitType.create('.service_desc',{type:'chars'})
+// console.log(heroText)
 
 mm.add("(min-width:768px)",()=>{
 
-  const t1=gsap.timeline({
-    scrollTrigger:{
-      trigger:triggerRef2.current,
-      start:'top center',
-      end:'top 20%',
-      scrub:true,
-      toggleActions:'play none none none',
-    }
-  })
+  // const t1=gsap.timeline({
+  //   scrollTrigger:{
+  //     trigger:triggerRef2.current,
+  //     start:'top center',
+  //     end:'top 20%',
+  //     scrub:true,
+  //     toggleActions:'play none none none',
+  //   }
+  // })
 
-  t1.from(charss.words,{
-    opacity:0,
-    y:40,
-    transform:'bottom',
-    ease:"easeOut",
+  // t1.from(charss.words,{
+  //   opacity:0,
+  //   y:40,
+  //   transform:'bottom',
+  //   ease:"easeOut",
 
-    stagger:0.2,
-    duration:1,
-  }).from(heroText.words,{
-    y:20,
-    opacity:0,
-    stagger:0.02,
-  }).from(".svg_container",{
-    opacity:0,
-    y:40,
-    transform:'bottom',
-    ease:"easeOut",
-    duration:1,
-  })
+  //   stagger:0.2,
+  //   duration:1,
+  // }).from(heroText.words,{
+  //   y:20,
+  //   opacity:0,
+  //   stagger:0.02,
+  // }).from(".svg_container",{
+  //   opacity:0,
+  //   y:40,
+  //   transform:'bottom',
+  //   ease:"easeOut",
+  //   duration:1,
+  // })
   gsap.timeline({
     scrollTrigger:{
       trigger:'#svg',
@@ -107,33 +110,33 @@ mm.add("(min-width:768px)",()=>{
       },0)
 })
 mm.add("(max-width:768px)",()=>{
-  const t1=gsap.timeline({
-    scrollTrigger:{
-      trigger:triggerRef2.current,
-      start:'top center',
-      end:'top 20%',
-      scrub:true
-    },
-  })
-  t1.from(charss.words,{
-    opacity:0,
-    y:40,
-    transform:'bottom',
-    ease:"easeOut",
+  // const t1=gsap.timeline({
+  //   scrollTrigger:{
+  //     trigger:triggerRef2.current,
+  //     start:'top center',
+  //     end:'top 20%',
+  //     scrub:true
+  //   },
+  // })
+  // t1.from(charss.words,{
+  //   opacity:0,
+  //   y:40,
+  //   transform:'bottom',
+  //   ease:"easeOut",
 
-    stagger:0.5,
-    duration:1,
-  }).from(heroText.words,{
-    y:20,
-    opacity:0,
-    stagger:0.02,
-  }).from(".svg_container",{
-    opacity:0,
-    y:40,
-    transform:'bottom',
-    ease:"easeOut",
-    duration:1,
-  })
+  //   stagger:0.5,
+  //   duration:1,
+  // }).from(heroText.words,{
+  //   y:20,
+  //   opacity:0,
+  //   stagger:0.02,
+  // }).from(".svg_container",{
+  //   opacity:0,
+  //   y:40,
+  //   transform:'bottom',
+  //   ease:"easeOut",
+  //   duration:1,
+  // })
   gsap.timeline({
     scrollTrigger:{
       trigger:'#svg',
@@ -196,12 +199,27 @@ mm.add("(max-width:768px)",()=>{
   return(
   <section id="WhatWeDo" ref={triggerRef2} className="md:min-h-[100vh]  flex flex-col justify-center pb-11 ">
     <div className="self-center flex flex-col gap-6 mt-11 mb-6">
-      <h1 className="service_header services" style={{color:'#0618DD'}}>Our Services</h1>
-      <p className="service_text service_desc md:w-[70%] flex w-[90%] self-center">The key to successful advertising is not simply spending more money, but spending on the right platform, audience and ads.</p>
+      <motion.h1  variants={fadeIn("up", "tween",0.25,0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+       className="service_header services" >Our Services</motion.h1>
+      <motion.p 
+       variants={fadeIn("up", "tween",0.35,0.5)}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }}
+      className="service_text service_desc md:w-[70%] flex w-[90%] self-center">The key to successful advertising is not simply spending more money, but spending on the right platform, audience and ads.</motion.p>
     </div>
    
     {/* <a className="w-fit" id="blue12">sssss</a> */}
-    <div className="svg_container flex flex-col md:mt-6 md:p-0 self-center">
+    <motion.div 
+     variants={fadeIn("up", "tween",0.25,0.5)}
+     initial="hidden"
+     whileInView="show"
+     viewport={{ once: true }}
+    
+    className="svg_container flex flex-col md:mt-6 md:p-0 self-center">
 <svg className="self-center hidden md:block" id="svg" width="350" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_218_69)">
 <path id="path1" d="M387.8 472.16C364.931 472.16 337.843 462.813 308.441 444.345C261.933 415.17 214.925 366.711 175.995 307.861C137.064 249.011 110.883 186.713 102.262 132.537C93.5505 77.6344 103.85 37.3878 131.347 19.1929C158.843 0.998011 199.907 7.25959 247.005 36.7979C293.513 65.9733 340.52 114.433 379.451 173.282C418.382 232.132 444.562 294.385 453.183 348.607C461.895 403.509 451.595 443.756 424.099 461.951C413.799 468.757 401.548 472.16 387.8 472.16ZM167.691 14.111C154.941 14.111 143.643 17.1965 134.205 23.458C108.524 40.4732 98.95 78.8595 107.344 131.675C115.874 185.17 141.738 246.697 180.26 304.957C218.782 363.217 265.245 411.132 311.118 439.944C356.401 468.348 395.468 474.61 421.195 457.64C446.922 440.625 456.45 402.239 448.056 349.423C439.526 295.928 413.663 234.401 375.14 176.141C336.618 117.881 290.155 69.9662 244.282 41.1538C215.697 23.2312 189.562 14.111 167.737 14.111H167.691Z" fill="black"/>
@@ -334,9 +352,9 @@ mm.add("(max-width:768px)",()=>{
 </defs>
 </svg>
 
- <img className="w-fit absolute hidden md:block" id='blue12' src="/blue_point.png" />
- <img className="w-fit absolute  hidden md:block" id='blue13' src="/blue_point.png" />
- <img className="w-fit absolute hidden md:block " id='blue14' src="/blue_point.png" />
+ <img className="w-fit absolute hidden md:block" id='blue12' src="/ball_mob.png" />
+ <img className="w-fit absolute  hidden md:block" id='blue13' src="/ball_mob.png" />
+ <img className="w-fit absolute hidden md:block " id='blue14' src="/ball_mob.png" />
  <img className="w-fit absolute  md:hidden" id='blue1' src="/ball_mob.png" />
  <img className="w-fit absolute md:hidden" id='blue2' src="/ball_mob.png" />
  <img className="w-fit absolute md:hidden" id='blue3' src="/ball_mob.png" />
@@ -345,7 +363,7 @@ mm.add("(max-width:768px)",()=>{
 {/* <svg width="357" height="465" viewBox="0 0 357 465" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path id='path1' d="M69.3736 464.659C55.8069 464.659 43.692 461.347 33.4376 454.632C5.85028 436.573 -4.67644 396.372 3.80846 341.424C12.1572 287.202 38.0657 224.814 76.6788 165.737C115.292 106.705 162.118 57.974 208.444 28.6171C255.361 -1.14807 296.424 -7.59115 324.011 10.4676C351.599 28.5264 362.125 68.7276 353.641 123.675C345.292 177.897 319.383 240.286 280.77 299.363C242.157 358.394 195.331 407.125 149.005 436.482C119.512 455.176 92.3328 464.705 69.3736 464.705V464.659ZM288.03 5.61263C266.114 5.61263 239.888 14.8689 211.212 33.0184C165.475 62.0123 119.239 110.154 80.9893 168.595C42.7392 227.037 17.1484 288.7 8.89033 342.241C0.768415 395.056 10.4784 433.442 36.2507 450.321C45.6431 456.492 56.8504 459.532 69.419 459.532C91.3345 459.532 117.561 450.276 146.237 432.126C191.974 403.133 238.21 354.991 276.46 296.549C314.71 238.108 340.301 176.445 348.559 122.904C356.681 8.65267 300.599 5.61263 288.03 5.61263Z" fill="black"/>
 </svg> */}
-    </div>
+    </motion.div>
   </section>
 );
   }

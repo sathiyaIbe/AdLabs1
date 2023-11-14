@@ -3,128 +3,139 @@
 import {gsap,ScrollTrigger} from "gsap/all";
 import { useEffect, useRef, useState } from "react";
 import SplitType from "split-type";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 const Team = () => {
   const sectionRefTeam = useRef(null);
 
-useEffect(()=>{
-  const ctxTeam=gsap.context(()=>{
-    const arr1=["#first","#second","#third"]
-    const charss=SplitType.create('.team', {type:'chars'})
-    const heroText=SplitType.create('.team_desc',{type:'chars'})
+// useEffect(()=>{
+//   const ctxTeam=gsap.context(()=>{
+//     const arr1=["#first","#second","#third"]
+//     const charss=SplitType.create('.team', {type:'chars'})
+//     const heroText=SplitType.create('.team_desc',{type:'chars'})
 
 
-    const t1=gsap.timeline({
-      scrollTrigger:{
-        trigger:sectionRefTeam.current,
-        start:'top center',
-          end:'top 20%',
-        scrub:true,
-      },
-    })
+//     // const t1=gsap.timeline({
+//     //   scrollTrigger:{
+//     //     trigger:sectionRefTeam.current,
+//     //     start:'top center',
+//     //       end:'top 20%',
+//     //     scrub:true,
+//     //   },
+//     // })
 
 
-    t1.from(charss.words,{
-      opacity:0,
-      y:40,
-      transform:'bottom',
-      ease:"easeOut",
+//     // t1.from(charss.words,{
+//     //   opacity:0,
+//     //   y:40,
+//     //   transform:'bottom',
+//     //   ease:"easeOut",
   
-      stagger:0.2,
-      duration:1,
-    }).from(heroText.words,{
-      y:20,
-      opacity:0,
-      stagger:0.02,
-    })
-    const mm=gsap.matchMedia()
-    mm.add("(min-width:768px)",()=>{
-      const t=gsap.timeline({
-        scrollTrigger:{
-          trigger:sectionRefTeam.current,
-          start:'top center',
-          end:'bottom center',
-          scrub:false,
-          toggleActions:'play none none reset',
-        }
-      })
+//     //   stagger:0.2,
+//     //   duration:1,
+//     // }).from(heroText.words,{
+//     //   y:20,
+//     //   opacity:0,
+//     //   stagger:0.02,
+//     // })
+//     const mm=gsap.matchMedia()
+//     mm.add("(min-width:768px)",()=>{
+//       const t=gsap.timeline({
+//         scrollTrigger:{
+//           trigger:sectionRefTeam.current,
+//           start:'top center',
+//           end:'bottom center',
+//           scrub:false,
+//           toggleActions:'play none none reset',
+//         }
+//       })
   
-      const arr=gsap.utils.toArray('.first_team')
-      arr.map((element,i) => {
-        t.to(element,{
-          opacity:1,
-          scaleY:1,
-          duration:0.3,
-         transform:'bottom',
-        })
-        .fromTo(arr1[i],{
-          opacity:0,
+//       const arr=gsap.utils.toArray('.first_team')
+//       arr.map((element,i) => {
+//         t.to(element,{
+//           opacity:1,
+//           scaleY:1,
+//           duration:0.3,
+//          transform:'bottom',
+//         })
+//         .fromTo(arr1[i],{
+//           opacity:0,
           
-          scale:0,
-        },{
-          opacity:1,
-          scale:1,
-          duration:0.3,
-        },)
+//           scale:0,
+//         },{
+//           opacity:1,
+//           scale:1,
+//           duration:0.3,
+//         },)
   
-      });
+//       });
       
-    })
+//     })
 
-    mm.add("(max-width:768px)",()=>{
-      const t=gsap.timeline({
-        scrollTrigger:{
-          trigger:sectionRefTeam.current,
-          start:'top center',
-          end:'bottom 70%',
-          scrub:true,
-        }
-      })
+//     mm.add("(max-width:768px)",()=>{
+//       const t=gsap.timeline({
+//         scrollTrigger:{
+//           trigger:sectionRefTeam.current,
+//           start:'top center',
+//           end:'bottom 70%',
+//           scrub:true,
+//         }
+//       })
   
-      const arr=gsap.utils.toArray('.first_team')
-      arr.map((element,i) => {
-        t.to(element,{
-          opacity:1,
-          scaleY:1,
-          duration:1,
-         transform:'bottom',
-        })
-        .fromTo(arr1[i],{
-          opacity:0,
+//       const arr=gsap.utils.toArray('.first_team')
+//       arr.map((element,i) => {
+//         t.to(element,{
+//           opacity:1,
+//           scaleY:1,
+//           duration:1,
+//          transform:'bottom',
+//         })
+//         .fromTo(arr1[i],{
+//           opacity:0,
           
-          scale:0,
-        },{
-          opacity:1,
-          scale:1,
-          duration:0.5,
-          transform:'bottom'
-        },)
+//           scale:0,
+//         },{
+//           opacity:1,
+//           scale:1,
+//           duration:0.5,
+//           transform:'bottom'
+//         },)
   
-      });
+//       });
       
-    })
+//     })
 
-  })
-  return () => ctxTeam.revert()
-});
+//   })
+//   return () => ctxTeam.revert()
+// });
   return(
   <section ref={sectionRefTeam} className="flex flex-col justify-center min-h-screen max-w-[100vw] pb-24">
     <div className=" flex flex-col self-center w-[80%] items-center">
         <div className="self-center md:w-[60%]  mt-6 mb-6 flex flex-col gap-6">
-      <h1 className="service_header team" style={{color:'#0618DD'}}>The Team</h1>
-      <p className="hero_text  team_desc md:w-[90%] self-center">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</p>
+      <motion.h1  variants={fadeIn("up", "tween",0.25,0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }} className="service_header team" >The Team</motion.h1>
+      <motion.p  variants={fadeIn("up", "tween",0.35,0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }} className="hero_text  team_desc md:w-[90%] self-center">With over 7 years combined strategic and hand-on experience in all areas, rest assured that our team has the context and experience to deliver results.</motion.p>
     </div>
-    <div className="w-[90%] self-center flex md:flex-row items-center  md:justify-center flex-col gap-11 md:gap-0 mt-11">
+    <motion.div variants={fadeIn("up", "tween",0.40,0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }} className="w-[90%] self-center flex md:flex-row items-center  md:justify-center flex-col gap-11 md:gap-0 mt-11">
       <div className="flex flex-col justify-center  " >
-        <div className="flex justify-center gap-3 first_team opacity-0 ">
+        <div className="flex justify-center gap-3 first_team  ">
         <svg  width="70" height="63" viewBox="0 0 70 63" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M47.497 13.2419C45.1023 11.8592 42.6582 10.519 40.2952 9.02309C39.2112 8.3634 38.1376 7.5658 37.3077 6.60132C36.18 5.29061 36.3705 3.06086 37.5075 1.78131C38.3161 0.870396 40.3675 0.353567 41.0202 1.21223C43.6132 4.57612 47.666 5.13473 51.1297 6.75956C54.0799 8.13764 57.252 9.02334 60.2022 10.4014C62.3485 11.3953 64.5304 12.5307 66.3131 14.0525C70.552 17.6787 70.2193 23.3446 65.5005 26.1135C58.9435 29.9474 52.202 33.4666 44.9206 35.8581C43.4989 36.3066 41.9708 36.6315 40.4917 36.613C38.2269 36.5818 36.7951 33.4671 38.2888 31.7516C39.5529 30.3197 41.189 29.1701 42.758 27.9924C45.1608 26.1832 47.6701 24.4977 50.3347 22.5925C49.6503 21.8472 49.3093 21.1507 48.8527 21.0702C41.0268 19.9277 33.2244 20.013 25.5887 22.1928C19.1837 24.0023 13.6234 27.1939 9.76997 32.9194C4.35328 40.9797 4.46331 50.6116 10.3094 58.4067C10.9621 59.2654 11.6924 60.0142 12.2031 60.6077C11.966 62.5332 10.8377 62.7723 9.80021 62.4168C7.47742 61.6179 5.71948 60.0749 4.37443 57.9613C-1.79764 48.0365 -0.466329 35.2279 7.60678 26.6035C12.332 21.5911 17.9838 18.1057 24.6682 16.2709C30.1715 14.7639 35.7649 14.2121 41.4371 14.152C43.3833 14.1129 45.3226 14.166 47.2652 14.173C47.332 13.9004 47.4021 13.5818 47.497 13.2419Z" fill="black"/>
 </svg>
     <p  className="team_text rotate-6">LOSH</p>
         </div>
-        <img id='first' src='/team_img_1.png' className="opacity-0 w-[80%] self-center" alt='team_img'/>
+        <img id='first' src='/team_img_1.png' className=" w-[80%] self-center" alt='team_img'/>
       </div>
       <div className="flex flex-col  " >
-        <div className="flex justify-end   first_team opacity-0">
+        <div className="flex justify-end   first_team ">
 
     <p className="team_text rotate-[-12deg] md:rotate-12 md:relative  md:bottom-[30px]">Amir</p>
     <svg className=" relative top-[10%]" width="54" height="71" viewBox="0 0 54 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,18 +143,18 @@ useEffect(()=>{
 </svg> 
 
         </div>
-        <img id='second' src='/team_img_2.png'  className="opacity-0  relative bottom-[10px] w-[80%] self-center" alt='team_img'/>
+        <img id='second' src='/team_img_2.png'  className="  relative bottom-[10px] w-[80%] self-center" alt='team_img'/>
       </div>
       <div className="flex flex-col " >
-        <div className="flex justify-center gap-3 first_team opacity-0">
+        <div className="flex justify-center gap-3 first_team ">
         <svg width="70" height="63" viewBox="0 0 70 63" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M47.497 13.2419C45.1023 11.8592 42.6582 10.519 40.2952 9.02309C39.2112 8.3634 38.1376 7.5658 37.3077 6.60132C36.18 5.29061 36.3705 3.06086 37.5075 1.78131C38.3161 0.870396 40.3675 0.353567 41.0202 1.21223C43.6132 4.57612 47.666 5.13473 51.1297 6.75956C54.0799 8.13764 57.252 9.02334 60.2022 10.4014C62.3485 11.3953 64.5304 12.5307 66.3131 14.0525C70.552 17.6787 70.2193 23.3446 65.5005 26.1135C58.9435 29.9474 52.202 33.4666 44.9206 35.8581C43.4989 36.3066 41.9708 36.6315 40.4917 36.613C38.2269 36.5818 36.7951 33.4671 38.2888 31.7516C39.5529 30.3197 41.189 29.1701 42.758 27.9924C45.1608 26.1832 47.6701 24.4977 50.3347 22.5925C49.6503 21.8472 49.3093 21.1507 48.8527 21.0702C41.0268 19.9277 33.2244 20.013 25.5887 22.1928C19.1837 24.0023 13.6234 27.1939 9.76997 32.9194C4.35328 40.9797 4.46331 50.6116 10.3094 58.4067C10.9621 59.2654 11.6924 60.0142 12.2031 60.6077C11.966 62.5332 10.8377 62.7723 9.80021 62.4168C7.47742 61.6179 5.71948 60.0749 4.37443 57.9613C-1.79764 48.0365 -0.466329 35.2279 7.60678 26.6035C12.332 21.5911 17.9838 18.1057 24.6682 16.2709C30.1715 14.7639 35.7649 14.2121 41.4371 14.152C43.3833 14.1129 45.3226 14.166 47.2652 14.173C47.332 13.9004 47.4021 13.5818 47.497 13.2419Z" fill="black"/>
 </svg>
     <p className="team_text rotate-6">Farra</p>
         </div>
-        <img id='third' src='/team_img_3.png'   className="opacity-0 w-[80%] self-center" alt='team_img'/>
+        <img id='third' src='/team_img_3.png'   className=" w-[80%] self-center" alt='team_img'/>
       </div>
-    </div>
+    </motion.div>
     </div>
   </section>
 );
