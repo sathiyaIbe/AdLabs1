@@ -63,12 +63,12 @@ const sectionRef=useRef()
 //     return () => ctx.revert();  //cleaedUp
 // },[])
   return(
-  <section id="WhoWeAre" ref={triggerRef1} className="section_container justify-center ">
+  <section id="WhoWeAre" ref={triggerRef1} className="section_container md:justify-center ">
 
     <div className="self-center    flex flex-col">
       <img src='/Logo_Animation.gif' className=" md:w-[40%] w-[60%] self-center" alt='logo' />
     </div>
-    <div ref={sectionRef} className=" md:w-[50%]  self-center flex flex-col justify-center gap-3">
+    <div ref={sectionRef} className=" md:w-[50%] w-[80%] mb-36 md:mb-0  self-center flex flex-col justify-center gap-3">
       <div className=' self-center'>
       <h1 className="hero_header opacity-1">Supercharge your growth with performance-based Ads that deliver <span className="text-[#0618DD]">real results. </span> </h1>
       </div>
