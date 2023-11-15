@@ -37,7 +37,7 @@
 }
 
 .service_text{
-  @apply font-[Spartan] text-[16px] leading-[22px] md:leading-[26px] text-[#282828] text-center;
+  @apply font-[Spartan] text-[16px] md:text-[22px] leading-[22px] md:leading-[39px] text-[#282828] text-center;
 
 }
 
