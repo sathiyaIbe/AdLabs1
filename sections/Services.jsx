@@ -238,12 +238,12 @@ mm.add("(max-width:768px)",()=>{
         <img src="/arrow_4.svg" alt="arrow1" className="relative md:top-[-120px] md:left-[290px] left-[230px] top-[-65px] w-16 md:w-fit"  />
       </div>
       <div className="absolute">     
-        <img src="/ad_5.svg" alt="arrow1" className="relative md:left-[425px] top-[120px] left-[290px] top-[110px] w-16 md:w-fit" />
+        <img src="/ad_5.svg" alt="arrow1" className="relative md:left-[425px] top-[95px] left-[290px] top-[110px] w-16 md:w-fit" />
         <img src="/arrow_5.svg" alt="arrow1" className="relative md:top-[0px] md:left-[340px] left-[260px] top-[25px] w-16 md:w-fit"  />
       </div>
       <div className="absolute">     
         <img src="/ad_6.svg" alt="arrow1" className="relative md:left-[365px] top-[260px] left-[290px] top-[210px] w-16 md:w-fit" />
-        <img src="/arrow_6.svg" alt="arrow1" className="relative top-[130px] md:left-[300px] left-[250px] top-[145px] w-16 md:w-fit"  />
+        <img src="/arrow_6.svg" alt="arrow1" className="relative md:top-[150px] md:left-[300px] left-[250px] top-[145px] w-16 md:w-fit"  />
       </div>      
 <svg className="self-center hidden md:block" id="svg" width="350" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_218_69)">

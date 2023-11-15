@@ -32,12 +32,12 @@
 /* Service */
 
 .service_header{
-  @apply font-[Manrope-Bold] text-[32px] md:text-[48px]  lg:text-[52px] leading-[40px] md:leading-[52px]  lg:leading-[58px] text-[#000] text-center ;
+  @apply font-[Manrope-Bold] text-[32px] md:text-[320%] leading-[40px] md:leading-[1.15em] text-[#000] text-center ;
 
 }
 
 .service_text{
-  @apply font-[Spartan] text-[18px] leading-[22px] md:leading-[39px] text-[#282828] text-center;
+  @apply font-[Spartan] text-[16px] leading-[22px] md:leading-[26px] text-[#282828] text-center;
 
 }
 

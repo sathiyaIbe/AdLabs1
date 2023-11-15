@@ -111,7 +111,7 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-       className="service_header contact">Book your free  10-minute  consultation call</motion.h1>
+       className="service_header contact">Book your free  30-minute  consultation call</motion.h1>
     </div>
     <div className="flex flex-col  justify-center mt-11">
     <div className=" self-center w-[90%]  flex md:flex-row justify-center  flex-col gap-24  md:gap-0">
