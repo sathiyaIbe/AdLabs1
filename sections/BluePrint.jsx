@@ -66,21 +66,15 @@ mm.add("(min-width:768px)",()=>{
 gsap.timeline({
   scrollTrigger:{
     trigger:'#main',
-    start:'top 0%',
+    start:'top 110%',
   }
-}).from(".svg_container_blue",{
-  opacity:0,
-  y:40,
-  transform:'bottom',
-  ease:"easeOut",
-  duration:0.35,
 }).from(".text_svg_container",{
   opacity:0,
   y:40,
   transform:'bottom',
   ease:"easeOut",
   duration:0.35,
-},0)
+})
     gsap.timeline({
       scrollTrigger:{
         trigger:'#main',
@@ -482,7 +476,7 @@ AUDIT
 </div>
       </div>
       <motion.div 
-       variants={fadeIn("up", "tween",0.35,0.5)}
+       variants={fadeIn("up", "tween",0.40,0.5)}
        initial="hidden"
        whileInView="show"
        viewport={{ once: true }} className="md:min-w-[50%]   svg_container_blu flex flex-col md:order-2 order-1 ">

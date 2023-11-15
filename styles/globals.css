@@ -19,13 +19,13 @@
 }
 
 .hero_header{
-  @apply font-[Manrope-Bold] text-[22px] md:text-[38px]   leading-[32px] md:leading-[52px]  text-[#000] text-center;
+  @apply font-[Manrope-Bold] text-[22px] md:text-[320%]   leading-[32px] md:leading-[1.15em]  text-[#000] text-center;
 }
 
 
 
 .hero_text{
-  @apply font-[Spartan] text-[18px] md:text-[20px]  lg:text-[20px] leading-[22px] md:leading-[26px] lg:leading-[29px] text-[#282828] text-center;
+  @apply font-[Spartan] text-[14px] md:text-[16px]  lg:text-[20px] leading-[22px] md:leading-[26px] lg:leading-[29px] text-[#282828] text-center;
 
 }
 

@@ -87,7 +87,7 @@ mm.add("(min-width:768px)",()=>{
         
       },0).to("#blue13",{
         opacity:1,
-  
+        yoyo:true,
         repeat:-1,
           duration:10,
          motionPath:{
@@ -100,6 +100,7 @@ mm.add("(min-width:768px)",()=>{
       },0).to("#blue14",{
         repeat:-1,
           duration:10,
+          yoyo:true,
          motionPath:{
           path:'#path3',
           align:"#path3",
@@ -219,7 +220,31 @@ mm.add("(max-width:768px)",()=>{
      whileInView="show"
      viewport={{ once: true }}
     
-    className="svg_container flex flex-col md:mt-6 md:p-0 self-center">
+    className="svg_container flex flex-col mt-6 md:p-0 self-center">
+      <div className="absolute">     
+        <img src="/ad_1.svg" alt="arrow1" className="relative md:left-[-150px] md:top-[-10px] left-[-20px] w-16 md:w-fit" />
+        <img src="/arrow1.svg" alt="arrow1" className="relative md:top-[-120px] md:left-[0px] top-[-60px] left-[20px] w-14  md:w-fit"  />
+      </div>
+      <div className="absolute">     
+        <img src="/ad_2.svg" alt="arrow1" className="relative md:left-[-200px] md:top-[120px] left-[-40px] top-[110px] w-16 md:w-fit" />
+        <img src="/arrow_2.svg" alt="arrow1" className="relative md:top-[40px] md:left-[-80px] left-[-30px] top-[40px] w-14  md:w-fit"  />
+      </div>
+      <div className="absolute">     
+        <img src="/ad_3.svg" alt="arrow1" className="relative md:left-[-160px] md:top-[260px] top-[220px] left-[-30px] w-16 md:w-fit" />
+        <img src="/arrow_3.svg" alt="arrow1" className="relative md:top-[160px] md:left-[-25px]  top-[140px] left-[-5px] w-16 md:w-fit"  />
+      </div>
+       <div className="absolute">     
+        <img src="/ad_4.svg" alt="arrow1" className="relative md:left-[380px] top-[-30px] left-[270px] top-[0px] w-16 md:w-fit" />
+        <img src="/arrow_4.svg" alt="arrow1" className="relative md:top-[-120px] md:left-[290px] left-[230px] top-[-65px] w-16 md:w-fit"  />
+      </div>
+      <div className="absolute">     
+        <img src="/ad_5.svg" alt="arrow1" className="relative md:left-[425px] top-[120px] left-[290px] top-[110px] w-16 md:w-fit" />
+        <img src="/arrow_5.svg" alt="arrow1" className="relative md:top-[0px] md:left-[340px] left-[260px] top-[25px] w-16 md:w-fit"  />
+      </div>
+      <div className="absolute">     
+        <img src="/ad_6.svg" alt="arrow1" className="relative md:left-[365px] top-[260px] left-[290px] top-[210px] w-16 md:w-fit" />
+        <img src="/arrow_6.svg" alt="arrow1" className="relative top-[130px] md:left-[300px] left-[250px] top-[145px] w-16 md:w-fit"  />
+      </div>      
 <svg className="self-center hidden md:block" id="svg" width="350" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_218_69)">
 <path id="path1" d="M387.8 472.16C364.931 472.16 337.843 462.813 308.441 444.345C261.933 415.17 214.925 366.711 175.995 307.861C137.064 249.011 110.883 186.713 102.262 132.537C93.5505 77.6344 103.85 37.3878 131.347 19.1929C158.843 0.998011 199.907 7.25959 247.005 36.7979C293.513 65.9733 340.52 114.433 379.451 173.282C418.382 232.132 444.562 294.385 453.183 348.607C461.895 403.509 451.595 443.756 424.099 461.951C413.799 468.757 401.548 472.16 387.8 472.16ZM167.691 14.111C154.941 14.111 143.643 17.1965 134.205 23.458C108.524 40.4732 98.95 78.8595 107.344 131.675C115.874 185.17 141.738 246.697 180.26 304.957C218.782 363.217 265.245 411.132 311.118 439.944C356.401 468.348 395.468 474.61 421.195 457.64C446.922 440.625 456.45 402.239 448.056 349.423C439.526 295.928 413.663 234.401 375.14 176.141C336.618 117.881 290.155 69.9662 244.282 41.1538C215.697 23.2312 189.562 14.111 167.737 14.111H167.691Z" fill="black"/>
@@ -285,7 +310,7 @@ mm.add("(max-width:768px)",()=>{
 </defs>
 </svg>
 
-<svg className="md:hidden self-center" width="100%" height="100%" viewBox="0 0 405 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="md:hidden self-center" width="90%" height="100%" viewBox="0 0 405 362" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_226_307)">
 <path id="path01" d="M288.456 351.692C271.422 351.692 251.245 344.729 229.345 330.974C194.703 309.243 159.689 273.147 130.691 229.313C101.693 185.478 82.1925 139.075 75.7711 98.7209C69.282 57.8265 76.954 27.8485 97.435 14.2959C117.916 0.743284 148.502 5.40727 183.584 27.4091C218.226 49.1406 253.239 85.2358 282.237 129.071C311.235 172.905 330.736 219.275 337.157 259.662C343.646 300.557 335.974 330.535 315.493 344.087C307.822 349.157 298.696 351.692 288.456 351.692ZM124.506 10.5106C115.009 10.5106 106.594 12.8088 99.5642 17.4728C80.4351 30.1467 73.3039 58.739 79.5563 98.0787C85.9102 137.925 105.174 183.754 133.868 227.15C162.562 270.545 197.17 306.235 231.339 327.696C265.068 348.853 294.167 353.517 313.33 340.877C332.493 328.203 339.591 299.61 333.338 260.271C326.984 220.424 307.72 174.595 279.026 131.2C250.333 87.8044 215.725 52.1148 181.556 30.6537C160.264 17.3038 140.797 10.5106 124.54 10.5106H124.506Z" fill="black"/>
 <path id="path02" d="M125.015 352.064C114.909 352.064 105.885 349.597 98.2473 344.595C77.6987 331.144 69.8578 301.2 76.1778 260.272C82.3965 219.884 101.695 173.413 130.456 129.409C159.217 85.4395 194.096 49.1415 228.602 27.2748C263.549 5.10395 294.135 0.304769 314.683 13.756C335.232 27.2072 343.073 57.1514 336.753 98.0796C330.534 138.467 311.236 184.938 282.475 228.942C253.714 272.912 218.835 309.21 184.328 331.076C162.36 345.001 142.116 352.098 125.015 352.098V352.064ZM287.882 10.1397C271.558 10.1397 252.024 17.0343 230.664 30.5531C196.597 52.1494 162.157 88.0081 133.667 131.539C105.176 175.069 86.1141 220.999 79.9631 260.88C73.9134 300.22 81.146 328.812 100.343 341.384C107.339 345.981 115.687 348.245 125.048 348.245C141.372 348.245 160.907 341.351 182.267 327.832C216.334 306.235 250.773 270.377 279.264 226.846C307.755 183.316 326.817 137.386 332.968 97.505C339.017 58.1653 331.785 29.573 312.588 17.0005C305.592 12.4041 297.244 10.1397 287.882 10.1397Z" fill="black"/>
@@ -352,12 +377,12 @@ mm.add("(max-width:768px)",()=>{
 </defs>
 </svg>
 
- <img className="w-fit absolute hidden md:block" id='blue12' src="/ball_mob.png" />
- <img className="w-fit absolute  hidden md:block" id='blue13' src="/ball_mob.png" />
- <img className="w-fit absolute hidden md:block " id='blue14' src="/ball_mob.png" />
- <img className="w-fit absolute  md:hidden" id='blue1' src="/ball_mob.png" />
- <img className="w-fit absolute md:hidden" id='blue2' src="/ball_mob.png" />
- <img className="w-fit absolute md:hidden" id='blue3' src="/ball_mob.png" />
+ <img className="w-fit absolute hidden md:block" id='blue12' src="/ball_mob.svg" />
+ <img className="w-fit absolute  hidden md:block" id='blue13' src="/ball_mob.svg" />
+ <img className="w-fit absolute hidden md:block " id='blue14' src="/ball_mob.svg" />
+ <img className="w-fit absolute  md:hidden" id='blue1' src="/ball_mob.svg" />
+ <img className="w-fit absolute md:hidden" id='blue2' src="/ball_mob.svg" />
+ <img className="w-fit absolute md:hidden" id='blue3' src="/ball_mob.svg" />
 
 
 {/* <svg width="357" height="465" viewBox="0 0 357 465" fill="none" xmlns="http://www.w3.org/2000/svg">

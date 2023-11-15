@@ -9,7 +9,7 @@ return(
   
 >
     {/* <Navbar /> */}
-    <Hero />  
+    {/* <Hero />   */}
         <Services />
   <BluePrint />
       <Faq />
