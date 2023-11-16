@@ -198,8 +198,8 @@ mm.add("(max-width:768px)",()=>{
   }, []);
 
   return(
-  <section id="WhatWeDo" ref={triggerRef2} className="md:min-h-[100vh]  flex flex-col justify-center pb-11 ">
-    <div className="self-center flex flex-col gap-6 mt-11 mb-6">
+  <section id="WhatWeDo" ref={triggerRef2} className="md:min-h-[100vh]  flex flex-col justify-center pb-11 md:gap-6 gap-12">
+    <div className="self-center flex flex-col gap-6 mt-11 ">
       <motion.h1  variants={fadeIn("up", "tween",0.25,0.5)}
       initial="hidden"
       whileInView="show"
@@ -220,7 +220,7 @@ mm.add("(max-width:768px)",()=>{
      whileInView="show"
      viewport={{ once: true }}
     
-    className="svg_container flex flex-col mt-6  md:p-0 self-center">
+    className="svg_container flex flex-col mt-6  mb-24 md:mb-0 md:p-0 self-center">
       <div className="absolute">     
         <img src="/ad_1.svg" alt="arrow1" className="relative md:left-[-170px] md:top-[-10px] left-[-10px] top-[-35px] w-16 md:w-40" />
         <img src="/arrow_1.svg" alt="arrow1" className="relative  md:top-[-70px] md:left-[-10px] top-[-40px] left-[40px] w-11  md:w-16"  />
