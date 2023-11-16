@@ -143,9 +143,9 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-       className="basis-2/3  calendly order-1 md:order-2">
+       className="basis-2/3 md:hidden  calendly order-1 md:order-2">
       <InlineWidget pageSettings={pageSettings} styles={{
-  height: '350px',minWidth:'320px',
+  height: '450px',minWidth:'300px',
   position: 'relative',
 }}  url="https://calendly.com/losh-param/30min"
   
@@ -154,7 +154,21 @@ const Contact = () => {
 url="https://calendly.com/sathiya_"
 style={{"minWidth":"320px", "height":"750px"}}></div> */}
       </motion.div>
-
+      <motion.div variants={fadeIn("up", "tween",0.25,0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+       className="basis-2/3  md:block hidden  calendly order-1 md:order-2">
+      <InlineWidget pageSettings={pageSettings} styles={{
+  height: '350px',minWidth:'300px',
+  position: 'relative',
+}}  url="https://calendly.com/losh-param/30min"
+  
+/>
+      {/* <div class="calendly-inline-widget"
+url="https://calendly.com/sathiya_"
+style={{"minWidth":"320px", "height":"750px"}}></div> */}
+      </motion.div>
     </div>
     </div>
     </div>

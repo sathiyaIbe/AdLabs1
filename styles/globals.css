@@ -95,6 +95,7 @@
   @apply rounded-3xl;
   max-height: fit-content !important;
   max-width: 550px !important;
+  @applyt md:max-width-[550px] max-width-[100px] min-height-[500px] pr-24 ;
   padding: 20px !important;
 }
 
