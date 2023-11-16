@@ -238,7 +238,7 @@ mm.add("(max-width:768px)",()=>{
         <img src="/arrow_3.svg" alt="arrow1" className="relative md:top-[160px] md:left-[-5px]  top-[180px] left-[20px] w-11 md:w-16"  />
       </div>
        <div className="absolute">     
-        <img src="/ad_4.svg" alt="arrow1" className="relative md:left-[380px] top-[-30px] left-[270px] top-[60px] w-16 md:w-40" />
+        <img src="/ad_4.svg" alt="arrow1" className="relative md:left-[380px] md:top-[-10px] left-[270px] top-[60px] w-16 md:w-40" />
         <img src="/arrow_4.svg" alt="arrow1" className="relative hidden md:block md:top-[-60px] md:left-[300px] left-[250px] top-[-20px] w-8 md:w-16"  />
         <img src="/arrow_6.svg" alt="arrow1" className="relative md:top-[-60px] md:hidden md:left-[300px] left-[245px] top-[-10px] w-11 md:w-16"  />
 
