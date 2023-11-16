@@ -222,28 +222,38 @@ mm.add("(max-width:768px)",()=>{
     
     className="svg_container flex flex-col mt-6 md:p-0 self-center">
       <div className="absolute">     
-        <img src="/ad_1.svg" alt="arrow1" className="relative md:left-[-150px] md:top-[-10px] left-[-20px] w-16 md:w-fit" />
-        <img src="/arrow1.svg" alt="arrow1" className="relative md:top-[-120px] md:left-[0px] top-[-60px] left-[20px] w-14  md:w-fit"  />
+        <img src="/ad_1.svg" alt="arrow1" className="relative md:left-[-170px] md:top-[-10px] left-[-30px] top-[60px] w-16 md:w-40" />
+        <img src="/arrow_1.svg" alt="arrow1" className="relative hidden md:block md:top-[-70px] md:left-[-10px] top-[-60px] left-[20px] w-14  md:w-16"  />
+        <img src="/arrow_3.svg" alt="arrow1" className="relative md:hidden md:top-[-70px] md:left-[-10px] top-[-10px] left-[10px] w-11  md:w-16"  />
+
       </div>
       <div className="absolute">     
-        <img src="/ad_2.svg" alt="arrow1" className="relative md:left-[-200px] md:top-[120px] left-[-40px] top-[110px] w-16 md:w-fit" />
-        <img src="/arrow_2.svg" alt="arrow1" className="relative md:top-[40px] md:left-[-80px] left-[-30px] top-[40px] w-14  md:w-fit"  />
+        <img src="/ad_2.svg" alt="arrow1" className="relative md:left-[-180px] md:top-[120px] left-[-30px] top-[180px] w-16 md:w-40" />
+        <img src="/arrow_2.svg" alt="arrow1" className="relative hidden md:block md:top-[40px] md:left-[-60px] left-[-30px] top-[40px] w-14  md:w-16"  />
+        <img src="/arrow_3.svg" alt="arrow1" className="relative md:hidden md:top-[40px] md:left-[-60px] left-[-10px] top-[110px] w-11  md:w-16"  />
+
       </div>
       <div className="absolute">     
-        <img src="/ad_3.svg" alt="arrow1" className="relative md:left-[-160px] md:top-[260px] top-[220px] left-[-30px] w-16 md:w-fit" />
-        <img src="/arrow_3.svg" alt="arrow1" className="relative md:top-[160px] md:left-[-25px]  top-[140px] left-[-5px] w-16 md:w-fit"  />
+        <img src="/ad_3.svg" alt="arrow1" className="relative md:left-[-140px] md:top-[260px] top-[245px] left-[-30px] w-16 md:w-40" />
+        <img src="/arrow_3.svg" alt="arrow1" className="relative md:top-[160px] md:left-[-5px]  top-[180px] left-[20px] w-11 md:w-16"  />
       </div>
        <div className="absolute">     
-        <img src="/ad_4.svg" alt="arrow1" className="relative md:left-[380px] top-[-30px] left-[270px] top-[0px] w-16 md:w-fit" />
-        <img src="/arrow_4.svg" alt="arrow1" className="relative md:top-[-120px] md:left-[290px] left-[230px] top-[-65px] w-16 md:w-fit"  />
+        <img src="/ad_4.svg" alt="arrow1" className="relative md:left-[380px] top-[-30px] left-[270px] top-[60px] w-16 md:w-40" />
+        <img src="/arrow_4.svg" alt="arrow1" className="relative hidden md:block md:top-[-60px] md:left-[300px] left-[250px] top-[-20px] w-8 md:w-16"  />
+        <img src="/arrow_6.svg" alt="arrow1" className="relative md:top-[-60px] md:hidden md:left-[300px] left-[245px] top-[-10px] w-11 md:w-16"  />
+
       </div>
       <div className="absolute">     
-        <img src="/ad_5.svg" alt="arrow1" className="relative md:left-[425px] md:top-[120px] left-[290px] top-[110px] w-16 md:w-fit" />
-        <img src="/arrow_5.svg" alt="arrow1" className="relative md:top-[0px] md:left-[340px] left-[260px] top-[25px] w-16 md:w-fit"  />
+    
+
+        <img src="/ad_5.svg" alt="arrow1" className="relative  md:left-[380px] md:top-[140px] left-[275px] top-[195px] w-16 md:w-40" />
+        <img src="/arrow_5.svg" alt="arrow1" className="relative hidden md:block md:top-[60px] md:left-[350px] left-[260px] top-[25px] w-16 md:w-14"  />
+      <img src="/arrow_6.svg" alt="arrow1" className="relative md:hidden md:top-[170px] md:left-[300px] left-[265px] top-[120px] w-11 md:w-16"  />
+
       </div>
       <div className="absolute">     
-        <img src="/ad_6.svg" alt="arrow1" className="relative md:left-[365px] md:top-[270px] left-[290px] top-[210px] w-16 md:w-fit" />
-        <img src="/arrow_6.svg" alt="arrow1" className="relative md:top-[130px] md:left-[300px] left-[250px] top-[145px] w-16 md:w-fit"  />
+        <img src="/ad_6.svg" alt="arrow1" className="relative md:left-[375px] md:top-[270px] left-[270px] top-[260px] w-16 md:w-48" />
+        <img src="/arrow_6.svg" alt="arrow1" className="relative md:top-[170px] md:left-[300px] left-[240px] top-[185px] w-11 md:w-16"  />
       </div>      
 <svg className="self-center hidden md:block" id="svg" width="350" height="120%" viewBox="0 0 544 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_218_69)">

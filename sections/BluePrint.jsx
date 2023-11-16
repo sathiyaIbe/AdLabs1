@@ -35,8 +35,8 @@ const ctx3=gsap.context(()=>{
     //   }
     // );
 
-    const charss=SplitType.create('.blueprint', {type:'chars'})
-const heroText=SplitType.create('.blueprint_desc',{type:'chars'})
+//     const charss=SplitType.create('.blueprint', {type:'chars'})
+// const heroText=SplitType.create('.blueprint_desc',{type:'chars'})
 
 const mm=gsap.matchMedia()
 mm.add("(min-width:768px)",()=>{
@@ -735,7 +735,7 @@ AUDIT
       <motion.h1  variants={fadeIn("up", "tween",0.25,0.5)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }} className="service_header blueprint ">Our Blueprint to <span className="text-[#0618DD]">elevate brands</span></motion.h1>
+      viewport={{ once: true }} className="service_header blueprint ">Our <span className="text-[#0618DD]">Blueprint </span> to elevate brands</motion.h1>
       <div className="w-[70%] self-center">
       <motion.p 
        variants={fadeIn("up", "tween",0.35,0.5)}
