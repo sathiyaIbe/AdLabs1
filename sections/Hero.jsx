@@ -68,12 +68,12 @@ const sectionRef=useRef()
     <div className="self-center  mb-6  flex flex-col">
       <img src='/Logo_Animation.gif' className=" md:w-[50%] w-[60%] self-center" alt='logo' />
     </div>
-    <div ref={sectionRef} className=" md:w-[60%] w-[80%] mb-36  self-center flex flex-col justify-center gap-11">
+    <div ref={sectionRef} className=" md:w-[60%] w-[80%] mb-36  self-center flex flex-col justify-center gap-6 md:gap-11">
       <div className=' self-center'>
       <h1 className="hero_header opacity-1">Supercharge your growth with performance-based Ads that deliver <span className="text-[#0618DD]">real results. </span> </h1>
       </div>
       <div className=' self-center'>
-      <p style={{fontFamily:'Spartan'}} className="hero_text  self-center heroText hidden md:block">Ad Labs is a Paid Advertising Agency that will bring your brand forward with a Return on 
+      <p style={{fontFamily:'Spartan'}} className="hero_text  self-center heroText ">Ad Labs is a Paid Advertising Agency that will bring your brand forward with a Return on 
       Ad Spend. We leverage data to develop high-performing ad creatives and expertly manage campaigns to achieve maximum ROI.</p>
     </div>
     </div>
