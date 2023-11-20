@@ -61,7 +61,7 @@ const Footer = () => (
       whileInView="show"
       viewport={{ once: true }} className="flex mt-11  justify-between">
  <p className="footer_text">Based in Petaling Jaya, Malaysia</p>
- <p className="footer_text">AdLabs Sdn Bhd, 2023</p>
+ <p className="footer_text">AdLabs, 2023</p>
 
 </motion.div>
   </div>
